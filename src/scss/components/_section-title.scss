@@ -1,0 +1,17 @@
+.section-title{
+    font-family: Lighthaus;
+    font-size: 50px;
+    line-height: 37px;
+    text-align: center;
+    color: $black-pearl;
+
+    @media(max-width: 1279px){
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+    @media(max-width: 767px){
+        font-size: 24px;
+        line-height: 18px;
+    }
+}
