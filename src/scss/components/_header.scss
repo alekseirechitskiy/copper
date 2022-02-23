@@ -1,0 +1,32 @@
+.header{
+    flex-shrink: 0;
+    // position: fixed;
+    // left: 0;
+    // right: 0;
+    // position: relative;
+    height: 140px;
+    // background-image: url("@img/header-bg-desktop.png");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+
+    @media(max-width: 1278px){
+        height: 168px;
+    }
+
+    @media(max-width: 767px){
+        height: 90px;
+    }
+
+    &__inner{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items:flex-end;
+
+        @media(max-width: 1278px){
+            flex-wrap: wrap;
+        }
+    }
+}

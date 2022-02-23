@@ -1,0 +1,12 @@
+.logo{
+    z-index: 5;
+    width: 161px;
+
+    @media (max-width: 1279px){
+        width: 160px;
+    }
+
+    @media (max-width: 767px){
+        width: 115px;
+    }
+}

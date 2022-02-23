@@ -1,0 +1,53 @@
+.title{
+    font-family: Lighthaus;
+    font-size: 100px;
+    line-height: 75px;
+    padding-bottom: 50px;
+    position: relative;
+
+    @media(max-width: 1279px){
+        padding-bottom: 40px;
+        font-size: 60px;
+        line-height: 69px;
+    }
+
+    @media(max-width: 767px){
+        padding-bottom: 20px;
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+
+    &::after{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 623px;
+        height: 1px;
+
+        @media(max-width: 1279px){
+            width: 388px;
+        }
+
+        @media(max-width: 767px){
+            width: 199px;
+        }
+    }
+
+    &--white{
+        color: $white;
+
+        &::after{
+            background-color: $white;
+        }
+    }
+
+    &--black{
+        color: $black-pearl;
+
+        &::after{
+            background-color: $black-pearl;
+        }
+    }
+}

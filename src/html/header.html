@@ -1,5 +1,73 @@
 <header class="header">
     <div class="container">
-        Это шапка
+        <div class="header__inner">
+            <a class="logo" href="#">
+                <img class="logo__image" src="@img/logo.png" alt="logo image">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <div class="user-panel__inside-menu user-panel">
+                        <li class="user-panel__item-favourites user-panel__item">
+                            <a class="user-panel__link" href="#">
+                                <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                            </a>
+                        </li>
+                        <li class="user-panel__item-user user-panel__item">
+                            <a class="user-panel__link" href="#">
+                                <img src="@img/icons/icons.svg#user" class="svg-user-dims" alt="user" />
+                            </a>
+                        </li>
+                        <li class="user-panel__item">
+                            <span class="user-panel__count">1</span>
+                            <a class="user-panel__link" href="#">
+                                <img src="@img/icons/icons.svg#shopping-cart" class="svg-shopping-cart-dims"
+                                    alt="shopping-cart" />
+                            </a>
+                        </li>
+                        <button class="menu__close">
+                        </button>
+                    </div>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#" title="Каталог">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Доставка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <ul class="user-panel__list">
+                    <li class="user-panel__item-favourites user-panel__item">
+                        <a class="user-panel__link" href="#">
+                            <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                        </a>
+                    </li>
+                    <li class="user-panel__item">
+                        <a class="user-panel__link" href="#">
+                            <img src="@img/icons/icons.svg#user" class="svg-user-dims" alt="user" />
+                        </a>
+                    </li>
+                    <li class="user-panel__item">
+                        <span class="user-panel__count">1</span>
+                        <a class="user-panel__link" href="#">
+                            <img src="@img/icons/icons.svg#shopping-cart-grad" class="svg-shopping-cart-grad-dims"
+                                alt="shopping-cart-grad" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="menu__btn">
+                <img src="@img/icons/icons.svg#menu" class="svg-menu-dims" alt="menu image">
+            </button>
+        </div>
     </div>
 </header>
