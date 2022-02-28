@@ -1,0 +1,27 @@
+.reviews{
+    &__title{
+        margin-bottom: 0;
+    }
+    & .slick-list{
+        padding: 40px 0;
+        
+        @media(max-width: 1279px){
+            margin: 0 -15px;
+            padding: 24px 0 30px;
+        }
+
+        @media(max-width: 767px){
+            height: auto !important;
+            padding: 24px 0 30px;
+        }
+    }
+
+    & .slick-slide{
+        margin: 0 15px;
+    }
+
+    & .slick-dots{
+        margin-top: 0;
+
+    }
+}

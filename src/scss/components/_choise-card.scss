@@ -1,0 +1,56 @@
+.choise-card{
+    // max-width: 328px;
+
+
+    &__image{
+        margin-bottom: 24px;
+        @media(max-width: 767px){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: $font-size-large;
+        line-height: 19px;
+
+        @media(max-width: 767px){
+            font-weight: 800;
+            font-size: $font-size-normal;
+            line-height: 15px;
+        }
+    }
+
+    &__text{
+        margin-bottom: 15px;
+        font-size: $font-size-small;
+        line-height:19px;
+
+        @media(max-width: 767px){
+            font-size: $font-size-extraSmall;
+            margin-bottom: 11px;
+        }
+    }
+
+    &__link{
+        font-weight: 600;
+        font-size: $font-size-small;
+        line-height: 19px;
+        @extend %gradient-text;
+        padding-right: 15px;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 8px;
+            height: 8px;
+            top: 0px;
+            right: 0;
+            border-left: 2px solid #CF9164;
+            border-bottom: 2px solid #CF9164;
+            transform: rotate(-45deg);
+        }
+    }
+}

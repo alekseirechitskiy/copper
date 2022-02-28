@@ -10,4 +10,10 @@
     text-transform: uppercase;
     text-align: center;
     background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+
+    &:hover{
+        color: $black-pearl;
+        border: 1px solid $black-pearl;
+        background: transparent;
+    }
 }

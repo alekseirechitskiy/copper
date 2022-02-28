@@ -1,0 +1,90 @@
+.offer{
+    overflow: hidden;
+    height: 483px;
+    background-image: url("@img/offer-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+    @media(max-width: 1279px){
+        height: 518px;
+        background-position: center;
+    }
+
+    @media(max-width: 767px){
+        height: 518px;
+        background-image: url("@img/offer-bg-767.png");
+        background-position: center;
+    }
+
+    &__inner{
+        display: flex;
+        align-items: flex-start;
+
+        @media(max-width: 767px){
+            flex-wrap: wrap;
+        }
+    }
+
+    &__info{
+        margin-top: 80px;
+        z-index: 5;
+
+        @media(max-width: 767px){
+            width: 100%;
+            margin-top: 55px;
+        }
+    }
+
+    &__numbers{
+        width: 420px;
+        &::after{
+            display: none;
+        }
+
+        @media(max-width: 1279px){
+            font-size: 100px;
+            line-height: 75px;
+        }
+
+        @media(max-width: 767px){
+            width: 100%;
+            font-size: 60px;
+            line-height: 45px;
+        }
+    }
+
+    &__text{
+        max-width: 533px;
+        color: $white;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 34px;
+        margin-bottom: 50px;
+
+        @media(max-width: 1279px){
+            max-width: 306px;
+            font-size: $font-size-large;
+            line-height: 19px;
+        }
+        @media(max-width: 767px){
+            max-width: 165px;
+            font-size: $font-size-small;
+            line-height: 13px;
+        }
+    }
+
+
+    &__image{
+        margin-top: -214px;
+
+        @media(max-width: 1279px){
+            margin-top: -179px;
+            margin-left: -180px;
+        }
+
+        @media(max-width: 767px){
+            display: none;
+        }
+    }
+}

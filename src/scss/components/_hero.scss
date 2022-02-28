@@ -121,6 +121,8 @@
 
         &__button{
             display: block;
+            color: $white;
+            border-color: $white;
 
             @media(max-width: 1279px){
                 width: 244px;

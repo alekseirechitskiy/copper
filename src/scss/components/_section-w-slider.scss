@@ -1,0 +1,124 @@
+.section-w-slider{
+    padding: 80px 0;
+    position: relative;
+    
+    &__title{
+        margin-bottom: 46px;
+    }
+    
+    &__slider{
+
+    }
+
+    &__slider-item{
+        padding: 0 15px;
+    }
+
+    & .slick-list{
+        overflow: hidden;
+
+        @media(max-width: 1279px){
+            margin: 0 -15px;
+        }
+
+    }
+
+    & .slick-track{
+        display: flex;
+    }
+
+    & .slick-slide{
+        text-align: center;
+    }
+
+    & .slick-arrow{
+        position: absolute;
+        width: 87px;
+        height: 50px;
+        top: 50%;
+        margin-top: -50px;;
+        z-index: 1;
+        font-size: 0;
+        background-color: transparent;
+        border: 1px solid $black-pearl;
+        
+        img{
+            display: inline-block;
+        }
+    }
+
+    & .slick-prev{
+        left: 0;
+        text-align: right;
+        padding-right: 20px;
+        background-image: url("@img/icons/icons.svg#arrow-left");
+        background-repeat: no-repeat;
+        background-position: 70% center;
+        background-size: 55%;
+        border-left: none;
+
+        &:hover{
+            cursor: pointer;
+            background: url("@img/icons/icons.svg#arrow-right-wite-bg-grad") 0 0 no-repeat;
+            transform: rotate(180deg);
+            border: transparent;
+        }
+        
+        img{
+           margin-top: 5px;
+        }
+    }
+
+    & .slick-next{
+        right: 0;
+        text-align: left;
+        padding-left: 20px;
+        background-image: url("@img/icons/icons.svg#arrow-right");
+        background-repeat: no-repeat;
+        background-position: 35% center;
+        background-size: 55%;
+        border-right: none;
+
+        &:hover{
+            cursor: pointer;
+            background: url("@img/icons/icons.svg#arrow-right-wite-bg-grad") 0 0 no-repeat;
+            border: transparent;
+        }
+
+        img{
+           margin-top: 5px;
+        }
+    }
+
+    & .slick-dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 45px;
+
+        .slick-active{
+            button{
+                background: linear-gradient(65.81deg, #5E3928 -24.09%, #E4A16F 104.02%);
+            }
+        }
+
+        li{
+            margin: 0 5px;
+            cursor: pointer;
+
+
+            button{
+                font-size: 0px;
+                line-height: 1;
+                width: 12px;
+                height: 12px;
+                border: none;
+                background-color: $black-pearl;
+            }
+        }
+    }
+
+    &__link{
+        margin: 45px auto 0;
+    }
+}

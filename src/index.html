@@ -9,7 +9,7 @@
     <title>Copper Pro</title>
 </head>
 
-<body>
+<body id="body">
     <main>
         <section class="hero">
             @@include('html/header.html',{})
@@ -108,6 +108,467 @@
                 </div>
             </div>
         </section>
+        <section class="bestsellers section-w-slider">
+            <div class="container">
+                <div class="section-w-slider__inner">
+                    <h2 class="section-w-slider__title bestsellers__title section-title">
+                        Лучшие продажи
+                    </h2>
+                    <div class="section-w-slider__slider">
+                        <div class="preview-card section-w-slider__slider-item">
+                            <div class="preview-card__image-box">
+                                <div class="preview-card__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <img src="@img/product-1.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card__info">
+                                <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                <p class="preview-card__price">1 953 грн</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-card section-w-slider__slider-item">
+                            <div class="preview-card__image-box">
+                                <div class="preview-card__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <img src="@img/product-2.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card__info">
+                                <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                <p class="preview-card__price">1 953 грн</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-card section-w-slider__slider-item">
+                            <div class="preview-card__image-box">
+                                <div class="preview-card__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <img src="@img/product-3.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card__info">
+                                <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                <p class="preview-card__price">1 953 грн</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-card section-w-slider__slider-item">
+                            <div class="preview-card__image-box">
+                                <div class="preview-card__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <img src="@img/product-4.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card__info">
+                                <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                <p class="preview-card__price">1 953 грн</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="section-w-slider__link button" href="#">Перейти в каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest section-w-slider">
+            <div class="container">
+                <div class="section-w-slider__inner">
+                    <h2 class="section-w-slider__title bestsellers__title section-title">
+                        Лучшие продажи
+                    </h2>
+                    <div class="section-w-slider__slider">
+
+                        <div class="preview-card-sale section-w-slider__slider-item">
+                            <div class="preview-card-sale__image-box">
+                                <div class="preview-card-sale__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <div class="preview-card-sale__sale-marker">Sale</div>
+                                <img src="@img/product-1.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card-sale__info">
+                                <p class="preview-card-sale__text">Медный чайник с фарфоровой ручкой</p>
+                                <div class="preview-card-sale__prices">
+                                    <p class="preview-card-sale__price-old">1 953 грн</p>
+                                    <p class="preview-card-sale__price">1 953 грн</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="preview-card section-w-slider__slider-item">
+                            <div class="preview-card__image-box">
+                                <div class="preview-card__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <img src="@img/product-2.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card__info">
+                                <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                <p class="preview-card__price">1 953 грн</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-card section-w-slider__slider-item">
+                            <div class="preview-card__image-box">
+                                <div class="preview-card__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <img src="@img/product-3.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card__info">
+                                <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                <p class="preview-card__price">1 953 грн</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-card-sale section-w-slider__slider-item">
+                            <div class="preview-card-sale__image-box">
+                                <div class="preview-card-sale__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <div class="preview-card-sale__sale-marker">Sale</div>
+                                <img src="@img/product-4.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card-sale__info">
+                                <p class="preview-card-sale__text">Медный чайник с фарфоровой ручкой</p>
+                                <div class="preview-card-sale__prices">
+                                    <p class="preview-card-sale__price-old">1 953 грн</p>
+                                    <p class="preview-card-sale__price">1 953 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="section-w-slider__link button" href="#">Перейти в каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer">
+            <div class="container">
+                <div class="offer__inner">
+                    <div class="offer__info">
+                        <p class="offer__numbers title--white title">1 + 1 = 3</p>
+                        <p class="offer__text">Закажите два товара и получите третий бесплатно</p>
+                        <a class="offer__link button" href="#">Перейти в каталог</a>
+                    </div>
+                    <img class="offer__image" src="@img/offer.png" alt="offer image">
+                </div>
+            </div>
+        </section>
+
+        <section class="recomendation section-w-slider">
+            <div class="container">
+                <div class="section-w-slider__inner">
+                    <h2 class="section-w-slider__title bestsellers__title section-title">
+                        Мы рекомендуем
+                    </h2>
+                    <div class="section-w-slider__slider">
+
+                        <div class="preview-card-sale section-w-slider__slider-item">
+                            <div class="preview-card-sale__image-box">
+                                <div class="preview-card-sale__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <div class="preview-card-sale__sale-marker">Sale</div>
+                                <img src="@img/product-1.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card-sale__info">
+                                <p class="preview-card-sale__text">Медный чайник с фарфоровой ручкой</p>
+                                <div class="preview-card-sale__prices">
+                                    <p class="preview-card-sale__price-old">1 953 грн</p>
+                                    <p class="preview-card-sale__price">1 953 грн</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="preview-card section-w-slider__slider-item">
+                            <div class="preview-card__image-box">
+                                <div class="preview-card__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <img src="@img/product-2.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card__info">
+                                <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                <p class="preview-card__price">1 953 грн</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-card section-w-slider__slider-item">
+                            <div class="preview-card__image-box">
+                                <div class="preview-card__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <img src="@img/product-3.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card__info">
+                                <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                <p class="preview-card__price">1 953 грн</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-card-sale section-w-slider__slider-item">
+                            <div class="preview-card-sale__image-box">
+                                <div class="preview-card-sale__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <div class="preview-card-sale__sale-marker">Sale</div>
+                                <img src="@img/product-4.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card-sale__info">
+                                <p class="preview-card-sale__text">Медный чайник с фарфоровой ручкой</p>
+                                <div class="preview-card-sale__prices">
+                                    <p class="preview-card-sale__price-old">1 953 грн</p>
+                                    <p class="preview-card-sale__price">1 953 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="section-w-slider__link button" href="#">Перейти в каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="discount section-w-slider">
+            <div class="container">
+                <div class="section-w-slider__inner">
+                    <h2 class="section-w-slider__title bestsellers__title section-title">
+                        Скидки
+                    </h2>
+                    <div class="section-w-slider__slider">
+                        <div class="preview-card-sale section-w-slider__slider-item">
+                            <div class="preview-card-sale__image-box">
+                                <div class="preview-card-sale__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <div class="preview-card-sale__sale-marker">Sale</div>
+                                <img src="@img/product-1.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card-sale__info">
+                                <p class="preview-card-sale__text">Медный чайник с фарфоровой ручкой</p>
+                                <div class="preview-card-sale__prices">
+                                    <p class="preview-card-sale__price-old">1 953 грн</p>
+                                    <p class="preview-card-sale__price">1 953 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview-card-sale section-w-slider__slider-item">
+                            <div class="preview-card-sale__image-box">
+                                <div class="preview-card-sale__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <div class="preview-card-sale__sale-marker">Sale</div>
+                                <img src="@img/product-2.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card-sale__info">
+                                <p class="preview-card-sale__text">Медный чайник с фарфоровой ручкой</p>
+                                <div class="preview-card-sale__prices">
+                                    <p class="preview-card-sale__price-old">1 953 грн</p>
+                                    <p class="preview-card-sale__price">1 953 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview-card-sale section-w-slider__slider-item">
+                            <div class="preview-card-sale__image-box">
+                                <div class="preview-card-sale__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <div class="preview-card-sale__sale-marker">Sale</div>
+                                <img src="@img/product-3.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card-sale__info">
+                                <p class="preview-card-sale__text">Медный чайник с фарфоровой ручкой</p>
+                                <div class="preview-card-sale__prices">
+                                    <p class="preview-card-sale__price-old">1 953 грн</p>
+                                    <p class="preview-card-sale__price">1 953 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview-card-sale section-w-slider__slider-item">
+                            <div class="preview-card-sale__image-box">
+                                <div class="preview-card-sale__favourite">
+                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
+                                </div>
+                                <div class="preview-card-sale__sale-marker">Sale</div>
+                                <img src="@img/product-4.jpg" alt="preview-card image">
+                            </div>
+                            <div class="preview-card-sale__info">
+                                <p class="preview-card-sale__text">Медный чайник с фарфоровой ручкой</p>
+                                <div class="preview-card-sale__prices">
+                                    <p class="preview-card-sale__price-old">1 953 грн</p>
+                                    <p class="preview-card-sale__price">1 953 грн</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="section-w-slider__link button" href="#">Перейти в каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews section-w-slider">
+            <div class="container">
+                <div class="section-w-slider__inner">
+                    <h2 class="section-w-slider__title reviews__title section-title">
+                        Что думают о нас
+                    </h2>
+                    <div class="section-w-slider__slider">
+
+                        <div class="review-card section-w-slider__slider-item">
+                            <div class="review-card__content">
+                                <img class="review-card__image" src="@img/review-avatar.jpg" alt="avatar">
+                                <h4 class="review-card__name">Иван Иванов</h4>
+                                <p class="review-card__text">
+                                    Наше оборудование прозводится вручную. Мы постоянно производим контроль качества
+                                    произведенной продукции. В то же время,
+                                    если в ходе транспортировки или эксплуатации в течении первых 2 лет происходят
+                                    поломки,
+                                    мы всегда находим с клиентом
+                                    наиболее удобный вариант решения вопроса.
+                                </p>
+                                <p class="review-card__date">20.10.21</p>
+                            </div>
+                        </div>
+                        <div class="review-card section-w-slider__slider-item">
+                            <div class="review-card__content">
+                                <img class="review-card__image" src="@img/review-avatar.jpg" alt="avatar">
+                                <h4 class="review-card__name">Иван Иванов</h4>
+                                <p class="review-card__text">
+                                    Наше оборудование прозводится вручную. Мы постоянно производим контроль качества
+                                    произведенной продукции. В то же время,
+                                    если в ходе транспортировки или эксплуатации в течении первых 2 лет происходят
+                                    поломки,
+                                    мы всегда находим с клиентом
+                                    наиболее удобный вариант решения вопроса.
+                                </p>
+                                <p class="review-card__date">20.10.21</p>
+                            </div>
+                        </div>
+                        <div class="review-card section-w-slider__slider-item">
+                            <div class="review-card__content">
+                                <img class="review-card__image" src="@img/review-avatar.jpg" alt="avatar">
+                                <h4 class="review-card__name">Иван Иванов</h4>
+                                <p class="review-card__text">
+                                    Наше оборудование прозводится вручную. Мы постоянно производим контроль качества
+                                    произведенной продукции. В то же время,
+                                    если в ходе транспортировки или эксплуатации в течении первых 2 лет происходят
+                                    поломки,
+                                    мы всегда находим с клиентом
+                                    наиболее удобный вариант решения вопроса.
+                                </p>
+                                <p class="review-card__date">20.10.21</p>
+                            </div>
+                        </div>
+
+                        <div class="review-card section-w-slider__slider-item">
+                            <div class="review-card__content">
+                                <img class="review-card__image" src="@img/review-avatar.jpg" alt="avatar">
+                                <h4 class="review-card__name">Иван Иванов</h4>
+                                <p class="review-card__text">
+                                    Наше оборудование прозводится вручную. Мы постоянно производим контроль качества
+                                    произведенной продукции. В то же время,
+                                    если в ходе транспортировки или эксплуатации в течении первых 2 лет происходят
+                                    поломки,
+                                    мы всегда находим с клиентом
+                                    наиболее удобный вариант решения вопроса.
+                                </p>
+                                <p class="review-card__date">20.10.21</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="choise">
+            <div class="container">
+                <div class="choise__inner">
+                    <h2 class="choise__title section-title">
+                        Почему выбирают нас
+                    </h2>
+                    <ul class="choise__list">
+                        <li class="choise-card choise__item">
+                            <img class="choise-card__image" src="@img/choise-image-1.jpg" alt="choise-card image">
+                            <h5 class="choise-card__title">Аутентичность</h5>
+                            <p class="choise-card__text">
+                                Медное перегонное оборудование используется для получения эфирных масел с незапамятных
+                                времен.
+                            </p>
+                            <a class="choise-card__link" href="#">Читать больше</a>
+                        </li>
+                        <li class="choise-card choise__item">
+                            <img class="choise-card__image" src="@img/choise-image-2.jpg" alt="choise-card image">
+                            <h5 class="choise-card__title">Изысканность</h5>
+                            <p class="choise-card__text">
+                                Наши изделия из меди являются очень практичными. В то же время они наполнят особой
+                                магией ваш дом или рабочее....
+                            </p>
+                            <a class="choise-card__link" href="#">Читать больше</a>
+                        </li>
+                        <li class="choise-card choise__item">
+                            <img class="choise-card__image" src="@img/choise-image-3.jpg" alt="choise-card image">
+                            <h5 class="choise-card__title">Честная оплата</h5>
+                            <p class="choise-card__text">
+                                Мы стремимся предоставить лучший товар по лучшей цене с сервисом высокого уровня. Но все
+                                начинается c....
+
+                            </p>
+                            <a class="choise-card__link" href="#">Читать больше</a>
+                        </li>
+                        <li class="choise-card choise__item">
+                            <img class="choise-card__image" src="@img/choise-image-4.jpg" alt="choise-card image">
+                            <h5 class="choise-card__title">Большой ассортимент</h5>
+                            <p class="choise-card__text">
+                                У нас есть все от миниатюрных настольных паровых дистилляторов эфирных масел до
+                                крупногабаритного оборудования...
+                            </p>
+                            <a class="choise-card__link" href="#">Читать больше</a>
+                        </li>
+                        <li class="choise-card choise__item">
+                            <img class="choise-card__image" src="@img/choise-image-5.jpg" alt="choise-card image">
+                            <h5 class="choise-card__title">Доставка по всему миру</h5>
+                            <p class="choise-card__text">
+                                Вы можете получить нашу продукцию в кратчайшие сроки в любую точку земного шара.
+
+                            </p>
+                            <a class="choise-card__link" href="#">Читать больше</a>
+                        </li>
+                        <li class="choise-card choise__item">
+                            <img class="choise-card__image" src="@img/choise-image-6.jpg" alt="choise-card image">
+                            <h5 class="choise-card__title">Гарантия качества</h5>
+                            <p class="choise-card__text">
+                                Наше оборудование прозводится вручную. Мы постоянно производим контроль качества
+                                произведенной продукции.
+                            </p>
+                            <a class="choise-card__link" href="#">Читать больше</a>
+                        </li>
+                        <li class="choise-card choise__item">
+                            <img class="choise-card__image" src="@img/choise-image-7.jpg" alt="choise-card image">
+                            <h5 class="choise-card__title">Удобство в использовании</h5>
+                            <p class="choise-card__text">
+                                Наши изделия из меди имеют уникальный дизайн, который разрабатывался нами с целью
+                                получения максимальной...
+                            </p>
+                            <a class="choise-card__link" href="#">Читать больше</a>
+                        </li>
+                        <li class="choise-card choise__item">
+                            <img class="choise-card__image" src="@img/choise-image-8.jpg" alt="choise-card image">
+                            <h5 class="choise-card__title">Забота об окружающей среде</h5>
+                            <p class="choise-card__text">
+                                От 2 до 5% от стоимости каждого приобретенного товара в нашем магазине мы направляем на
+                                защиту....
+                            </p>
+                            <a class="choise-card__link" href="#">Читать больше</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
     </main>
     @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
