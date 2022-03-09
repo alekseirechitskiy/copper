@@ -124,6 +124,12 @@
         padding-left: 27px;
         transform: rotate(90deg);
         width: 127px;
+        
+        &:hover{
+            color: $white;
+            border-color: $white;
+            border-right: none;
+        }
 
         @media(max-width: 1279px){
             width: 176px;

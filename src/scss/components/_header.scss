@@ -5,10 +5,10 @@
     // right: 0;
     // position: relative;
     height: 140px;
-    // background-image: url("@img/header-bg-desktop.png");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
+    background-image: url("@img/header-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     @media(max-width: 1278px){
         height: 168px;

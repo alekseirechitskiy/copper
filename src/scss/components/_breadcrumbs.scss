@@ -1,0 +1,35 @@
+.breadcrumbs{
+
+    &__list{
+        display: flex;
+        
+        @media(max-width: 767px){
+            font-size: 16px;
+            line-height: 15px;
+        }
+    }
+
+    &__item{
+        padding: 0 10px;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "/";
+            top: 0;
+            right: -4px;
+        }
+
+        &:first-child{
+            padding-left: 0;
+        }
+
+        &:last-child{
+            font-weight: 600;
+
+            &::after{
+                display: none;
+            }
+        }
+    }
+}

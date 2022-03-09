@@ -15,3 +15,12 @@ export function isWebp() {
         document.documentElement.classList.add(className);
     });
 }
+
+// установка фона для header
+export function isIndex() {
+    let header = document.querySelector('.header');
+    let bodyClass = document.getElementsByTagName('body')[0].className;
+    if (bodyClass == 'index') {
+        header.style.background = 'transparent';
+    }
+}

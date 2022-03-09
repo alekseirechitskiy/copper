@@ -3,6 +3,7 @@ import * as flsFunctions from "./modules/functions.js"
 import slickModule from './modules/slickModule.js';
 
 flsFunctions.isWebp();
+flsFunctions.isIndex();
 slickModule();
 // dotdotdot();
 

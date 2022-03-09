@@ -1,0 +1,155 @@
+.hero-about{
+    padding: 40px 0 0;
+    background-image: url("@img/hero-about-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media(max-width: 1279px){
+        height: 820px;
+    }
+
+    @media(max-width: 767px){
+        height: auto;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 1279px){
+            height: 759px;
+            align-items: flex-start;
+        }
+
+        @media(max-width: 767px){
+            flex-direction: column;
+            height: auto;
+        }
+    }
+
+    &__info{
+        padding-bottom: 40px;
+        max-width: 650px;
+        
+    }
+
+    &__title{
+        @media(max-width: 1279px){
+            padding-bottom: 30px;
+            margin-top: 100px;
+        }
+
+        @media(max-width: 767px){
+            margin-top: 40px;
+        }
+    }
+
+    &__blockquote{
+        @extend %gradient-text;
+        margin: 50px 0 35px;
+        position: relative;
+        padding: 0 72px;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 48px;
+
+        @media(max-width: 1279px){
+            margin: 40px 0 56px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 32px;
+        }
+
+        @media(max-width: 767px){
+            width: 100%;
+            font-size: 20px;
+            line-height: 22px;
+            padding: 0px 50px;
+        }
+
+        &::before,
+        &::after{
+            position: absolute;
+            content: "";
+            width: 34px;
+            height: 34px;
+            background-image: url("@img/quote.png");
+            background-repeat: no-repeat;
+        }
+
+        &::before{
+            top: 0;
+            left: 0;
+
+            @media(max-width: 767px){
+                top: -25px;
+            }
+        }
+
+        &::after{
+            bottom: 0;
+            right: 0;
+
+            @media(max-width: 767px){
+                bottom: -25px;
+            }
+        }
+    }
+
+    &__author-box{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__author-name{
+        @extend %gradient-text;
+        width: 165px;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 29px;
+
+        @media(max-width: 1279px){
+            width: 114px;
+            font-size: $font-size-medium;
+            line-height: 17px;
+        }
+
+        @media(max-width: 767px){
+            font-size: $font-size-normal;
+            line-height: 15px;
+            width: 86px;
+        }
+    }
+
+    &__author-image{
+        @media(max-width: 1279px){
+            width: 145px;
+        }
+
+        @media(max-width: 767px){
+            width: 90px;
+        }
+    }
+    
+    &__image-box{
+        margin-right: -110px;
+
+        @media(max-width: 1279px){
+            align-self: flex-end;
+            margin-right: 0;
+            margin-left: -100px;
+        }
+
+        @media(max-width: 767px){
+            margin-left: 40px;
+            margin-right: -40px;
+        }
+    }
+
+    &__image{
+        max-width: 100%;
+    }
+}

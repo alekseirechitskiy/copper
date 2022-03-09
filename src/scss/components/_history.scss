@@ -1,0 +1,45 @@
+.history{
+    padding: 75px 0;
+    background-image: url("@img/history-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    color: $white;
+
+    @media(max-width: 1279px){
+        padding: 80px 0;
+        background-image: none;
+        background-color: $black-pearl;
+    }
+
+    @media(max-width: 767px){
+        padding: 40px 0;
+    }
+
+    &__title{
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+
+        @media(max-width: 767px){
+            flex-wrap: wrap;
+        }
+    }
+
+    &__content-column{
+        width: 445px;
+        margin: 0 15px;
+    }
+
+    &__text{
+        margin-bottom: 25px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
