@@ -1,0 +1,36 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__arrows,
+    &__item{
+        margin: 0 5px;
+    }
+    
+    &__link{
+        text-align: center;
+        padding: 12px;
+        width: 38px;
+        height: 48px;
+        display: block;
+        color: $edward;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 24px;
+        border: 1px solid $edward;
+
+        &:hover,
+        &--active{
+            border: none;
+            color: $white;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+        }
+    }
+}

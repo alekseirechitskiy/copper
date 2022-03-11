@@ -33,6 +33,10 @@
     &__content-column{
         width: 445px;
         margin: 0 15px;
+
+        @media(max-width: 767px){
+            margin: 0;
+        }
     }
 
     &__text{

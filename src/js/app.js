@@ -1,6 +1,7 @@
 import $ from "jquery";
 import * as flsFunctions from "./modules/functions.js"
 import slickModule from './modules/slickModule.js';
+import mixitup from 'mixitup';
 
 flsFunctions.isWebp();
 flsFunctions.isIndex();
@@ -29,6 +30,8 @@ $(".footer__btn, .footer__logo").on("click", function (event) {
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({ scrollTop: top }, 1500);
 });
+
+var mixer = mixitup('.catalog__list');
 
 
 
