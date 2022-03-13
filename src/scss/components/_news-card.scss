@@ -1,0 +1,61 @@
+.news-card{
+    max-width: 683px;
+    display: inline-block;
+
+    &__image-box{
+        position: relative;
+        width: 100%;
+    }
+
+    &__image{
+        width: 100%;
+    }
+
+    &__date{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 89px;
+        height: 31px;
+        color: $white;
+        font-weight: 700;
+        font-size: $font-size-medium;
+        line-height: 17px;
+        padding: 9px 13px;
+        background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+    }
+
+    &__title{
+        position: absolute;
+        bottom: 26px;
+        left: 28px;
+        font-weight: 600;
+        font-size: $font-size-large;
+        line-height: 19px;
+        color: $white;
+
+        @media(max-width: 767px){
+            font-size: $font-size-small;
+            bottom: 10px;
+            left: 10px;
+        }
+    }
+
+    &__text{
+        padding: 26px 0 20px;
+        font-size: $font-size-small;
+        line-height: 19px;
+        max-width: 617px;
+
+        @media(max-width: 767px){
+            font-size: $font-size-small;
+        }
+    }
+
+    &__link{
+        &::after{
+            top: 2px;
+            transform: rotate(-135deg);
+        }
+    }
+}

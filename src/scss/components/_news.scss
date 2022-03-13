@@ -1,0 +1,19 @@
+.news{
+    padding: 0 0 80px;
+    
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        padding-bottom: 44px;
+    }
+
+    &__item{
+        flex: 1 47%;
+        margin: 15px;
+
+        @media(max-width: 1279px){
+            flex: 1 100%;
+        }
+    }
+}
