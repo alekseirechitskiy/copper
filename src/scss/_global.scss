@@ -26,6 +26,35 @@ a{
     color: inherit;
 }
 
+p{
+    margin-bottom: 25px;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 50px 0 20px;
+
+    @media(max-width: 1279px){
+        margin: 35px 0 10px;
+    }
+}
+
+ul:not[class]{
+    padding: 0;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+li:not[class]{
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: $font-size-small;
+    line-height: 25px;
+}
+
 %gradient-text{
     background: linear-gradient(92.18deg, #A26D4C 20.13%, #E4A16F 92.93%);
     -webkit-background-clip: text;

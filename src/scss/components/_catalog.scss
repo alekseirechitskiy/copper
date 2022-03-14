@@ -112,6 +112,7 @@
         font-size: $font-size-large;
         line-height: 19px;
         padding: 0 10px;
+        margin: 0;
 
         @media(max-width: 767px){
            font-size: 12px;
@@ -124,6 +125,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-left: 0;
         margin-bottom: 36px;
         border-top: 1px solid $gallery;
         padding-top: 40px;

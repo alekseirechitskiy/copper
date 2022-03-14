@@ -1,0 +1,26 @@
+.share-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $grey;
+
+    &__social-list{
+        display: flex;
+    }
+
+    &__list-item{
+        margin-right: 18px;
+        
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__text{
+        text-transform: uppercase;
+        font-size: $font-size-normal;
+        line-height: 21px;
+        font-weight: 800;
+        margin-right: 50px;
+    }
+}

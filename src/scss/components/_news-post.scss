@@ -1,0 +1,205 @@
+.news-post{
+    padding: 0 0 76px;
+
+    @media(max-width: 767px){
+        padding: 0 0 40px;
+    }
+
+    &__top{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 31px;
+
+        @media(max-width: 767px){
+            flex-wrap: wrap;
+        }
+
+        & .share-box{
+            @media(max-width: 1279px){
+                width: 112px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                span{
+                    margin-right: 0;
+                }
+            }
+
+            @media(max-width: 767px){
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                width: 100%;
+
+                span{
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+        
+
+    &__title{
+        text-align: left;
+        width: 578px;
+        line-height: 53px;
+
+        @media(max-width: 1279px){
+            width: 100%;
+            line-height: 48px;
+        }
+
+        @media(max-width: 767px){
+            line-height: 31px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__image-box{
+        position: relative;
+        margin-bottom: 45px;
+
+        @media(max-width: 1279px){
+            margin-bottom: 27px;
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            display: block;
+            height: 66%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(7, 44, 38, 0.7) 0%, rgba(7, 44, 38, 0) 100%);
+            transform: rotate(180deg);
+        }
+    }
+
+    &__image{
+        max-height: 428px;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        position: relative;
+
+    }
+
+    &__date{
+        top: 15px;
+
+        @media(max-width: 1279px){
+            top: 0;
+        }
+    }
+
+    &__content{
+        border-bottom: 1px solid $gallery;
+        padding-bottom: 30px;
+
+        & ul{
+            margin-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        & li{
+            font-weight: 600;
+            font-size: $font-size-small;
+            line-height: 25px;
+        }
+    }
+
+    &__bottom{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width: 1279px){
+            margin-top: 28px;
+            flex-wrap: wrap;
+
+            & .share-box{
+                order: 1;
+                width: 100%;
+                justify-content: center;
+                margin-top: 30px;
+            }
+        }
+
+        @media(max-width: 767px){
+           margin-top: 0;
+        }
+
+        
+    }
+
+    &__bottom-link{
+        max-width: 325px;
+
+        @media(max-width: 1279px){
+           max-width: 200px;
+        }
+
+        @media(max-width: 767px){
+            padding: 10px 0;
+            border-bottom: 1px solid $gallery;
+            max-width: 50%;
+        }
+
+        &--previous{
+            padding-left: 25px;
+            position: relative;
+
+            @media(max-width: 767px){
+                border-right: 1px solid $gallery;
+            }
+
+            &::before{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 3px;
+                width: 12px;
+                height: 12px;
+                border-left: 4px solid $como;
+                border-bottom: 4px solid $como;
+                transform: rotate(45deg);
+
+                @media(max-width: 767px){
+                    top: 50%;
+                    transform: translateY(-50%) rotate(45deg);
+                }
+            }
+        }
+
+        &--next{
+            padding-right: 25px;
+            position: relative;
+
+            @media(max-width: 767px){
+                padding-left: 10px;
+                margin-right: 0;
+            }
+
+            &::after{
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 3px;
+                width: 12px;
+                height: 12px;
+                border-left: 4px solid $como;
+                border-bottom: 4px solid $como;
+                transform: rotate(-135deg);
+
+                @media(max-width: 767px){
+                    top: 50%;
+                    transform: translateY(-50%) rotate(-135deg);
+                }
+            }
+        }
+
+    }
+}

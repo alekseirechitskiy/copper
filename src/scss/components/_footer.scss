@@ -16,6 +16,10 @@
         @media(max-width: 1279px){
             flex-wrap: wrap;
         }
+
+        @media(max-width: 767px){
+            padding: 40px 0 75px;
+        }
     }
 
     &__info{
@@ -33,6 +37,11 @@
         color: $grey;
         margin: 24px 0 21px;
         width: 214px;
+
+        @media(max-width: 767px){
+            margin-bottom: 17px;
+        }
+
     }
 
     &__link{
