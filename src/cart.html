@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Cooper - Cart</title>
+</head>
+
+<body id="body">
+    @@include('html/header.html',{})
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <span>
+                            Корзина
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="cart">
+            <div class="container">
+                <h2 class="cart__title section-title">
+                    Корзина
+                </h2>
+                <div class="cart__inner">
+                    <table class="table cart__table">
+                        <tr class="table__header">
+                            <th>Товар</th>
+                            <th>Количество</th>
+                            <th>Цена</th>
+                        </tr>
+                        <tr class="table-item table__row">
+                            <td class="table-item__info">
+                                <img class="table-item__image" src="@img/slider-thumb-1.jpg" alt="cart image">
+                                <h4 class="table-item__title">Дистиллятор для получения гидролата 8л</h4>
+                            </td>
+                            <td class="table-item__amount">
+                                2 шт.
+                            </td>
+                            <td class="table-item__price">
+                                <span>5 000 грн</span>
+                            </td>
+                            <td class="table-item__delete">
+                                <button class="table-item__delete-btn">
+                                    <img src="@img/icons/icons.svg#trash" class="svg-trash-dims" alt="trash">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="table-item table__row">
+                            <td class="table-item__info">
+                                <img class="table-item__image" src="@img/slider-thumb-1.jpg" alt="cart image">
+                                <h4 class="table-item__title">Дистиллятор для получения гидролата 8л</h4>
+                            </td>
+                            <td class="table-item__amount">
+                                2 шт.
+                            </td>
+                            <td class="table-item__price">
+                                <p class="table-item__price-old">1 953 грн</p>
+                                <p class="table-item__price-new">5 000 грн</p>
+                            </td>
+                            <td class="table-item__delete">
+                                <button class="table-item__delete-btn">
+                                    <img src="@img/icons/icons.svg#trash" class="svg-trash-dims" alt="trash">
+                                </button>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <div class="total-box cart__total-box">
+                        <div class="total-box__top">
+                            <h3 class="total-box__title">Итого</h3>
+                            <span class="total-box__sum">10 953 грн</span>
+                        </div>
+                        <div class="total-box__bottom">
+                            <div class="total-box__delivery">
+                                <img class="total-box__delivery-image" src="@img/delivery.png" alt="delivery image">
+                                <p class="total-box__delivery-text">
+                                    У вас бесплатная доставка!
+                                </p>
+                            </div>
+                        </div>
+                        <a class="total-box__btn button" href="#">Оформить заказ</a>
+                    </div>
+                    <a class="cart__btn button  button--grey" href="catalog.html">
+                        Назад к покупкам
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

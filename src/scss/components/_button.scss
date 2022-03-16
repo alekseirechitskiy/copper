@@ -16,4 +16,16 @@
         border: 1px solid $black-pearl;
         background: transparent;
     }
+    
+    &--grey{
+        background: transparent;
+        color: $silver-chalice;
+        border: 1px solid $silver-chalice;
+    }
+
+    &--black{
+        background: transparent;
+        color: $black-pearl;
+        border: 1px solid $black-pearl;
+    }
 }

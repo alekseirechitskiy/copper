@@ -1,0 +1,149 @@
+.table{
+    border-collapse: collapse;
+    // border: 1px solid black;
+
+    &__header{
+        height: 50px;
+        color: $silver-chalice;
+        text-align: left;
+        
+        @media(max-width: 767px){
+            display: none;
+        }
+
+        & th{
+            font-weight: 400;
+        }
+    }
+    
+    &__row{
+        height: 119px;
+
+        @media(max-width: 767px){
+            height: auto;
+        }
+
+        td{
+            border-top: 1px solid $silver-chalice;
+
+            @media(max-width: 767px){
+                display: flex;
+            }
+        }
+    }
+
+    & .table-item{
+        @media(max-width: 767px){
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        &__info{
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+
+            @media(max-width: 767px){
+                padding: 39px 0 20px;
+            }
+
+        }
+
+        &__image{
+            margin-right: 33px;
+        }
+
+        &__title{
+            width: 268px;
+            font-weight: 800;
+            font-size: $font-size-medium;
+            line-height: 24px;
+            text-transform: uppercase;
+
+            @media(max-width: 767px){
+                font-size: $font-size-normal;
+                line-height: 21px;
+            }
+        }
+
+        &__amount,
+        &__price{
+            font-weight: 600;
+            font-size: $font-size-large;
+            line-height: 26px;
+            text-transform: uppercase;
+
+            @media(max-width: 767px){
+                border: none;
+            }
+        }
+
+
+        &__price{
+            @media(max-width: 767px){
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                align-content: flex-start;
+                margin-top: -30px;
+            }
+        }
+
+        &__price-old{
+            margin: 0;
+            font-size: $font-size-small;
+            line-height: 13px;
+            opacity: 0.3;
+            margin-bottom: 2px;
+            position: relative;
+
+            @media(max-width: 767px){
+                margin-right: 35px;
+            }
+            
+            &::before{
+                position: absolute;
+                content:"";
+                top: 4px;
+                left: -5px;
+                height: 2px;
+                width: 68px;
+                background-color: $text-main-color;
+                opacity: 0.3;
+                transform: rotate(10deg);
+            }
+        }
+
+        &__price-new{
+            margin: 0;
+            font-weight: 800;
+            color: $sangria;
+        }
+
+        &__delete{
+            @media(max-width: 767px){
+                border: none;
+                order: -1;
+                justify-content: flex-end;
+                margin-bottom: -19px;
+            }
+        }
+
+        &__delete-btn{
+            width: auto;
+            height: 18px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            @media(max-width: 767px){
+                padding-top: 20px;
+            }
+        }
+
+
+
+    }
+}
