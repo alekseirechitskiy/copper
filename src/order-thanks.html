@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Cooper - Спасибо!</title>
+</head>
+
+<body id="body">
+    @@include('html/header-form.html',{})
+    <main>
+        <section class="order-thanks">
+            <div class="container">
+                <div class="order-thanks__inner">
+                    <img class="order-thanks__image" src="@img/thanks.png" alt="thanks image">
+                    <h2 class="order-thanks__title section-title">
+                        Спасибо за заказ
+                    </h2>
+                    <p class="order-thanks__text">
+                        Мы свяжемся с вами
+                        в ближайшее время
+                    </p>
+                    <a class="order-thanks__btn button" href="index.html">
+                        Главная
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer-form.html',{})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

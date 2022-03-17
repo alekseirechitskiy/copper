@@ -1,0 +1,88 @@
+.form{
+    &__top{
+        text-align: center;
+        padding: 45px 35px 30px;
+        @media(max-width: 767px){
+            padding: 28px 21px 30px;
+        }
+    }
+
+    &__title{
+        font-size: 35px;
+        line-height: 37px;
+        margin-bottom: 24px;
+
+        @media(max-width: 767px){
+            font-size: 24px;
+            line-height: 25px;
+        }
+    }
+
+    &__input{
+        width: 100%;
+        height: 50px;
+        border: 1px solid $silver-chalice;
+        padding: 16px 20px;
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: $font-size-medium;
+        line-height: 19px;
+
+        @media(max-width: 767px){
+            margin-bottom: 20px;
+        }
+        
+        &::placeholder{
+            color: $silver-chalice;
+        }
+    }
+
+    &__link{
+        font-weight: 600;
+        font-size: $font-size-medium;
+        line-height: 20px;
+
+        @media(max-width: 767px){
+            font-size: $font-size-normal;
+        }
+
+        &--gradient{
+            @extend %gradient-text;
+            padding-bottom: 2px;
+            border-bottom: 1px solid;
+
+            @media(max-width: 767px){
+                font-size: $font-size-medium;
+            }
+        }
+
+        &--white{
+            color: $white;
+        }
+
+        &--bold{
+            font-weight: 800;
+        }
+    }
+
+    &__btn{
+        width: 100%;
+        margin-top: 27px;
+
+        &--mt0{
+            margin-top: 0;
+        }
+    }
+
+    &__buttom{
+        background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+        padding: 24px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width: 767px){
+            padding: 24px 19px;
+        }
+    }
+}

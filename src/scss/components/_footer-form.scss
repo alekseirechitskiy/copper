@@ -1,0 +1,42 @@
+.footer-form{
+    background-image: url("@img/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    font-size: $font-size-small;
+    
+    &__inner{
+        padding: 55px 0 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+        @media(max-width: 1279px){
+            padding: 55px 0;
+        }
+        @media(max-width: 767px){
+            padding: 40px 0;
+        }
+    }
+
+    &__info{
+        text-align: center;
+
+        @media(max-width: 1279px){
+            margin-bottom: 0;
+        }
+
+        @media(max-width: 767px){
+            font-size: $font-size-extraSmall;
+        }
+    }
+
+    &__text{
+        color: $grey;
+        margin-top: 24px;
+        width: 100%;
+    }
+
+}

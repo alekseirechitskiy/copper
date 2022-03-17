@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Cooper - Регистрация</title>
+</head>
+
+<body id="body">
+    @@include('html/header-form.html',{})
+    <main>
+        <section class="authorization">
+            <div class="container">
+                <div class="authorization__inner">
+                    <div class="authorization__top">
+                        <a class="authorization__btn button button--grey" href="index.html">
+                            Назад на главную
+                        </a>
+                    </div>
+                    <div class="form authorization__form">
+                        <div class="form__top">
+                            <h2 class="form__title section-title">
+                                Регистрация
+                            </h2>
+                            <input class="form__input" type="text" placeholder="E-mail">
+                            <input class="form__input" type="password" placeholder="Пароль">
+                            <input class="form__input" type="password" placeholder="Повторите пароль">
+                            <a class="form__btn form__btn--mt0 button" href="#">Регистрация</a>
+                        </div>
+                        <div class="form__buttom">
+                            <a class="form__link form__link--white" href="#">Нету аккаунта ?</a>
+                            <a class="form__link form__link--white form__link--bold" href="authorization.html">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer-form.html',{})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
