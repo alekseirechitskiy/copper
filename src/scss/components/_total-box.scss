@@ -8,9 +8,9 @@
         border-bottom: 1px solid $silver-chalice;
         padding: 25px 25px 30px;
 
-        @media(max-width: 1279px){
-            text-align: center;
-        }
+        // @media(max-width: 1279px){
+        //     text-align: center;
+        // }
 
         @media(max-width: 767px){
             text-align: left;
@@ -32,17 +32,36 @@
         }
     }
 
+    &__price-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
     &__sum{
         font-weight: 800;
         font-size: 40px;
         line-height: 39px;
-
+        
         @media(max-width: 767px){
             font-size: 30px;
             line-height: 29px;
         }
     }
 
+    &__discount{
+        display: none;
+        flex-direction: column;
+        font-size: $font-size-small;
+        line-height: 19px;
+    }
+
+    &__discount-num{
+        font-weight: 800;
+        color: $sangria;
+    }
+    
     &__bottom{
         padding: 25px 38px 30px;
 
@@ -56,13 +75,13 @@
         align-items: center;
         
 
-        @media(max-width: 1279px){
-            justify-content: center;
-        }
+        // @media(max-width: 1279px){
+        //     justify-content: center;
+        // }
 
-        @media(max-width: 767px){
-            justify-content: flex-start;
-        }
+        // @media(max-width: 767px){
+        //     justify-content: flex-start;
+        // }
     }
 
     &__delivery-image{
@@ -78,6 +97,7 @@
     &__btn{
         margin: 0 38px;
         width: auto;
+        text-transform: none;
 
         @media(max-width: 1279px){
             margin: 0 auto 41px;

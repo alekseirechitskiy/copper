@@ -35,6 +35,12 @@
         }
     }
 
+    &__link{
+        height: 29px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
     &__item-favourites{
         @media(max-width: 1278px){
             display: none;
@@ -44,6 +50,10 @@
     &__count{
         font-weight: 700;
         @extend %gradient-text;
+        font-size: 25px;
+        line-height: 24px;
+        margin-bottom: 2px;
+
     }
 
     &__inside-menu{

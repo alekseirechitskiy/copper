@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Copper - Заказ</title>
+</head>
+
+<body id="body">
+    @@include('html/header-form.html',{})
+    <main>
+        <section class="offer-page">
+            <div class="container">
+                <div class="offer-page__top">
+                    <a class="offer-page__btn authorization__btn button button--grey" href="index.html">
+                        Назад на главную
+                    </a>
+                    <h2 class="offer-page__title section-title">
+                        Оформить заказ
+                    </h2>
+                </div>
+                <div class="offer-page__inner">
+                    <div class="offer-page__left">
+                        <div class="user-header-authorized offer-page__user-header">
+                            <div class="user-header-authorized__content">
+                                <img class="user-header-authorized__avatar" src="@img/user-avatar.jpg" alt="avatar">
+                                <div class="user-header-authorized__info">
+                                    <h4 class="user-header-authorized__info-title">
+                                        Добрый день,
+                                        <span class="user-header-authorized__info-username">Иван Иванов</span>
+                                    </h4>
+                                    <p class="user-header-authorized__info-text">
+                                        Приятных вам покупок!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-header offer-page__user-header">
+                            <div class="user-header__content">
+                                <div class="user-header__avatar">
+                                    <svg class="svg-user-dims">
+                                        <use xlink:href="@img/icons/icons.svg#user">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="user-header__info">
+                                    <h4 class="user-header__info-title">
+                                        Уже есть аккаунт или
+                                        хотите зарегистрироваться ?
+                                    </h4>
+                                    <p class="user-header__info-text">
+                                        Войдите в кабинет и получите скидку
+                                    </p>
+                                </div>
+                                <div class="user-header__buttons-box">
+                                    <a class="user-header__btn user-header__btn-enter button" href="#">Войти</a>
+                                    <a class="user-header__btn user-header__btn-registration button button--black"
+                                        href="registration.html">Регистрация</a>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form offer-page__form" action="">
+                            <ol class="form__list">
+                                <li class="form__item">
+                                    <h5 class="form__item-title">
+                                        Личные данные
+                                    </h5>
+                                    <div class="form__inputs-row">
+                                        <input class="form__input" type="text" placeholder="Имя">
+                                        <input class="form__input" type="text" placeholder="Фамилия">
+                                    </div>
+                                    <div class="form__inputs-row">
+                                        <input class="form__input" type="text" placeholder="Телефон">
+                                        <input class="form__input" type="text" placeholder="E-mail">
+                                    </div>
+                                    <div class="form__inputs-row">
+                                        <input class="form__input" type="text" placeholder="Страна">
+                                        <input class="form__input" type="text" placeholder="Город">
+                                    </div>
+                                </li>
+                                <li class="form__item">
+                                    <h5 class="form__item-title">
+                                        Доставка
+                                    </h5>
+                                    <label class="form__radio">
+                                        <div>
+                                            <input class="form__radio-input" type="radio" name="radio" checked>
+                                            <span class="form__radio-circle"></span>
+                                        </div>
+                                        <span class="form__radio-title form__radio-title--checked">Самовывоз</span>
+                                        <p class="form__radio-text">
+                                            Вы можете забрать из нашего официального магазина по адресу Бажана 8-Б,
+                                            Киев, 02132 Украина
+                                        </p>
+                                    </label>
+                                    <label class="form__radio">
+                                        <div>
+                                            <input class="form__radio-input" type="radio" name="radio">
+                                            <span class="form__radio-circle"></span>
+                                        </div>
+                                        <span class="form__radio-title">Новая почта</span>
+                                        <p class="form__radio-text">
+                                            Вы можете забрать из нашего официального магазина по адресу Бажана 8-Б,
+                                            Киев, 02132 Украина
+                                        </p>
+                                    </label>
+                                    <label class="form__radio">
+                                        <div>
+                                            <input class="form__radio-input" type="radio" name="radio">
+                                            <span class="form__radio-circle"></span>
+                                        </div>
+                                        <span class="form__radio-title">Курьер "Новая почта"</span>
+                                        <p class="form__radio-text">
+                                            Вы можете забрать из нашего официального магазина по адресу Бажана 8-Б,
+                                            Киев, 02132 Украина
+                                        </p>
+                                    </label>
+
+
+                                </li>
+                                <li class="form__item">
+                                    <h5 class="form__item-title">
+                                        Оплата
+                                    </h5>
+                                    <label class="form__radio">
+                                        <div>
+                                            <input class="form__radio-input" type="radio" name="radio-2" checked>
+                                            <span class="form__radio-circle"></span>
+                                        </div>
+                                        <span class="form__radio-title form__radio-title--checked">При получении</span>
+                                    </label>
+                                    <label class="form__radio">
+                                        <div>
+                                            <input class="form__radio-input" type="radio" name="radio-2">
+                                            <span class="form__radio-circle"></span>
+                                        </div>
+                                        <span class="form__radio-title">Онлайн-оплата картой</span>
+                                    </label>
+                                </li>
+                            </ol>
+                        </form>
+                    </div>
+                    <div class="offer-page__right">
+                        <ul class="users-products-list offer-page__users-products-list">
+                            <li class="users-products-list__item">
+                                <img class="users-products-list__item-image" src="@img/slider-thumb-1.jpg"
+                                    alt="product image">
+                                <div class="users-products-list__info">
+                                    <h4 class="users-products-list__item-title">
+                                        Дистиллятор для получения гидролата 8л
+                                    </h4>
+                                    <div class="users-products-list__item-bottom">
+                                        <span class="users-products-list__count">
+                                            2 шт.
+                                        </span>
+                                        <div class="users-products-list__price">
+                                            <span class="users-products-list__price-old">
+                                                1 953 грн
+                                            </span>
+                                            <span class="users-products-list__price-new">
+                                                5 000 грн
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="users-products-list__item">
+                                <img class="users-products-list__item-image" src="@img/slider-thumb-1.jpg"
+                                    alt="product image">
+                                <div class="users-products-list__info">
+                                    <h4 class="users-products-list__item-title">
+                                        Дистиллятор для получения гидролата 8л
+                                    </h4>
+                                    <div class="users-products-list__item-bottom">
+                                        <span class="users-products-list__count">
+                                            2 шт.
+                                        </span>
+                                        <div class="users-products-list__price">
+                                            <span class="users-products-list__price-old">
+                                                1 953 грн
+                                            </span>
+                                            <span class="users-products-list__price-new">
+                                                5 000 грн
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="total-box offer-page__total-box">
+                            <div class="total-box__top">
+                                <form class="offer-page__input-box form__input-box total-box__form" action="">
+                                    <input class="form__input form__input--small" type="text"
+                                        placeholder="Введите прокод">
+                                    <button type="button"
+                                        class="offer-page__input-box-btn form__input-box-btn button">Применить</button>
+                                </form>
+                                <h3 class="total-box__title">Итого</h3>
+                                <div class="total-box__price-box">
+                                    <span class="total-box__sum">10 953 грн</span>
+                                    <div class="total-box__discount">
+                                        <span class="total-box__discount-num">-30 %</span>
+                                        <span class="total-box__discount-text">с учетом промокода</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-box__bottom">
+                                <div class="total-box__delivery">
+                                    <img class="total-box__delivery-image" src="@img/delivery.png" alt="delivery image">
+                                    <p class="total-box__delivery-text">
+                                        У вас бесплатная доставка!
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="total-box__btn button" href="order-thanks.html">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer-form.html',{})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

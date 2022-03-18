@@ -18,10 +18,103 @@
         }
     }
 
+    &__list{
+        list-style-type: none;
+        list-style-position: outside;
+        counter-reset: item1;
+    }
+
+    &__item{
+        border-bottom: 1px solid $black-haze;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            
+
+        }
+
+        &::before{
+            position: absolute;
+            counter-increment: item1;
+            content: counter(item1);
+            top: -8px;
+            left: 0;
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(278.32deg, #0B3F37 -7.03%, #CB8D62 136.33%);
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 29px;
+            color: $white;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        &:last-child{
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-title{
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 26px;
+        padding-left: 58px;
+        margin-bottom: 37px;
+        position: relative;
+
+        @media(max-width: 767px){
+            font-weight: 500;
+            font-size: $font-size-medium;
+            line-height: 17px;
+            padding-top: 2px;
+        }
+    }
+
+    &__input-box{
+        display: flex;
+        width: 100%;
+        
+        & .form__input{
+            width: 68%;
+            
+        }
+    }
+
+    &__input-box-btn{
+        width: 126px;
+        border: none;
+        text-transform: none;
+        font-size: $font-size-small;
+    }
+
+    &__inputs-row{
+        width: 685px;
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 1279px){
+            width: 100%;
+        }
+
+        @media(max-width: 767px){
+            flex-direction: column;
+            width: 100%;
+        }
+
+        & .form__input{
+            flex-basis: 48%;
+        }
+    }
+
     &__input{
         width: 100%;
         height: 50px;
         border: 1px solid $silver-chalice;
+        border-radius: 0;
         padding: 16px 20px;
         margin-bottom: 30px;
         font-weight: 400;
@@ -31,9 +124,24 @@
         @media(max-width: 767px){
             margin-bottom: 20px;
         }
+
+        &--small{
+            font-size: $font-size-small;
+        }
         
         &::placeholder{
             color: $silver-chalice;
+        }
+    }
+
+    &__text{
+        color: $white;
+        font-weight: 600;
+        font-size: $font-size-medium;
+        line-height: 20px;
+
+        @media(max-width: 767px){
+            font-size: $font-size-normal;
         }
     }
 
@@ -84,5 +192,65 @@
         @media(max-width: 767px){
             padding: 24px 19px;
         }
+    }
+
+    &__radio{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    &__radio-input{
+        width: 0;
+        height: 0;
+        opacity: 0;
+        z-index: -1;
+        display: block;
+        position: absolute;
+
+        &:checked + .form__radio-circle{
+            background-color: $white;
+            background-image: url("@img/radio.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+        }
+    }
+
+    &__radio-circle{
+        width: 21px;
+        height: 21px;
+        background-color: $white;
+        border: 2px solid $silver-chalice;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: -2px;
+    }
+    
+    &__radio-title{
+        color: $silver-chalice;
+        font-weight: 800;
+        font-size: $font-size-large;
+        line-height: 19px;
+        margin-left: 35px;
+
+        @media(max-width: 767px){
+            font-size: $font-size-normal;
+            line-height: 15px;
+        }
+
+        &--checked{
+            @extend %gradient-text;
+        }
+    }
+    
+    &__radio-text{
+        margin-top: 17px;
+        margin-bottom: 13px;
+        max-width: 400px;
+        font-weight: 400;
+        font-size: $font-size-small;
+        line-height: 19px;
     }
 }

@@ -1,0 +1,65 @@
+.users-products-list{
+    height: 226px;
+    overflow-y: scroll;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $black-haze;
+        margin-bottom: 25px;
+    }
+
+    &__item-image{
+        margin-right: 30px;
+    }
+
+    &__item-title{
+        margin-bottom: 20px;
+    }
+
+    &__item-bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__count{
+        font-weight: 600;
+        font-size: $font-size-large;
+        line-height: 26px;
+    }
+
+    &__price{
+        width: 95px;
+    }
+
+    &__price-old{
+        display: block;
+        opacity: 0.3;
+        font-weight: 600;
+        font-size: $font-size-small;
+        line-height: 13px;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content:"";
+            top: 4px;
+            left: -5px;
+            height: 2px;
+            width: 68px;
+            background-color: $text-main-color;
+            opacity: 0.3;
+            transform: rotate(10deg);
+        }
+    }
+
+    &__price-new{
+        display: block;
+        font-weight: 800;
+        font-size: $font-size-large;
+        line-height: 26px;
+        color: $sangria;
+    }
+}

@@ -1,0 +1,114 @@
+.user-header{
+    padding: 20px 30px 20px 25px;
+    background-color: $black-haze;
+    background-image: url("@img/user-header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media(max-width: 1279px){
+        background-position: right bottom;
+    }
+
+    @media(max-width: 767px){
+        padding: 20px;
+    }
+
+    &__content{
+        display: flex;
+        align-items: center;
+
+        @media(max-width: 767px){
+            flex-direction: column;
+        }
+    }
+
+    &__avatar{
+        width: 82px;
+        height: 82px;
+        background-color: $white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media(max-width: 1279px){
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &__info{
+        width: 302px;
+        margin-left: 22px;
+
+        @media(max-width: 767px){
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+            margin: 15px 0 20px;
+        }
+    }
+
+    &__info-title{
+        font-weight: 800;
+        font-size: $font-size-medium;
+        line-height: 20px;
+        margin-bottom: 13px;
+
+        @media(max-width: 767px){
+            font-size: $font-size-normal;
+            margin-bottom: 6px;
+        }
+    }
+
+    &__info-text{
+        margin: 0;
+        font-weight: 400;
+        font-size: $font-size-small;
+        line-height: 19px;
+
+        @media(max-width: 767px){
+            font-size: $font-size-small;
+            font-weight: 300;
+        }
+    }
+
+    &__buttons-box{
+        display: flex;
+        margin-left: auto;
+
+        @media(max-width: 1279px){
+            flex-direction: column;
+        }
+
+        @media(max-width: 767px){
+            margin-left: 0;
+            width: 100%;
+        }
+    }
+
+    &__btn{
+        width: 186px;
+        margin-right: 28px;
+        text-transform: none;
+        font-size: $font-size-normal;
+        line-height: 15px;
+        
+        @media(max-width: 1279px){
+            margin-right: 0;
+            margin-bottom: 12px;
+        }
+
+        @media(max-width: 767px){
+            width: 100%;
+        }
+
+        &:last-child{
+            margin-right: 0;
+
+            @media(max-width: 1279px){
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -8,6 +8,28 @@ flsFunctions.isIndex();
 slickModule();
 // dotdotdot();
 
+
+//offer-page enter user's account
+$('.user-header__btn-enter').on('click', function () {
+    $('.user-header').remove();
+    $('.user-header-authorized').css('display', 'block');
+    $('.offer-page__input-box').css('display', 'flex');
+});
+
+$('.offer-page__input-box-btn').on('click', function () {
+    let value = $('.form__input--small').val();
+    if (value !== '') {
+        $('.total-box__discount').css('display', 'flex');
+    }
+});
+
+//radio-buttons
+$('.form__radio').on('click', function () {
+    $('.form__radio-title').removeClass('form__radio-title--checked');
+    $($(this).children('.form__radio-title')).addClass('form__radio-title--checked');
+});
+
+
 $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
 });
