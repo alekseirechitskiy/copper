@@ -151,15 +151,12 @@
 
     &__item{
         flex: 1 30%;
+        justify-content: space-between;
         margin: 15px;
 
         @media(max-width: 1279px){
-            flex: 1 45%;
+            flex: 0 1 47%;
             margin: 10px;
-
-            &:last-child{
-                flex: 0 48%;
-            }
 
             & .preview-card,
             & .preview-card-sale{

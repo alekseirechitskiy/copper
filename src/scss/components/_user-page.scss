@@ -1,0 +1,212 @@
+.user-page{
+    padding: 72px 0 80px;
+    position: relative;
+    overflow-x: hidden;
+
+    @media(max-width: 1279px){
+        padding: 52px 0 60px;
+    }
+
+    @media(max-width: 767px){
+        padding: 34px 0 40px;
+    }
+
+    &__title{
+        text-align: left;
+        margin-bottom: 50px;
+
+        @media(max-width: 1279px){
+            font-size: 60px;
+            margin-bottom: 36px;
+        }
+
+        @media(max-width: 767px){
+            font-size: 24px;
+            line-height: 18px;
+            margin-bottom: 19px;
+        }
+    }
+
+    &__tabs{
+        display: flex;
+
+        @media(max-width: 1279px){
+            flex-direction: column;
+        }
+    }    
+
+    &__table{
+        width: 100%;
+
+        tbody{
+            @media(max-width: 1279px){
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        td:not(:first-child){
+            @media(max-width: 1279px){
+                margin-top: -60px;
+                margin-right: 50px;
+                border-top: 0;
+                &:last-child{
+                    margin-left: auto;
+                    margin-right: 0;
+                }
+
+            }
+
+            @media(max-width: 767px){
+                margin: 0;
+                width: 50%;
+            }
+        }
+
+        & .table__header{
+            @media(max-width: 1279px){
+                display: none;
+            }
+        }
+
+        & .table__header-amount{
+            width: 150px;
+
+            @media(max-width: 1279px){
+                margin-left: auto;
+            }
+        }
+        & .table__header-product{
+            width: 445px;
+        }
+
+        & .table__header-price{
+            width: 150px;
+        }
+        & .table__header-date{
+            width: 115px;
+        }
+        & .table__header-status{
+            width: 135px;
+        }
+
+        & .table-item{
+            @media(max-width: 1279px){
+                display: flex;
+                flex-wrap: wrap;
+                height: auto;
+                justify-content: flex-start;
+            }
+            
+            @media(max-width: 767px){
+                flex-direction: row;
+            }
+        }
+    
+        
+        & .table-item__info{
+            @media(max-width: 1279px){
+                flex-basis: 100%;
+                width: 100%;
+                align-items: flex-start;
+            }
+            @media(max-width: 767px){
+                align-items: center;
+            }
+
+        & .table-item__title{
+            // margin-right: 55px;
+            @media(max-width: 1279px){
+                margin-top: 18px;
+                width: 100%;        
+            }
+
+        }
+
+        & .table-item__image{
+            margin-right: 30px;
+        }
+
+        & .table-item__title{
+            @media(max-width: 767px){
+                margin-right: 0;
+            }
+        }
+
+        & .table-item__amount{
+            @media(max-width: 1279px){
+                margin-left: 119px; 
+            }
+        }
+
+        & .table-item__status{
+            @media(max-width: 1279px){
+                margin-right: auto;
+            }
+
+            @media(max-width: 767px){
+                align-self: flex-end;
+                border-top: none;
+                margin-top: -28px;
+                justify-content: flex-end;
+            }
+        }
+
+        & .table-item__date{
+            @media(max-width: 1279px){
+                // order: -1;
+            }
+        }
+
+        & .table-item__price{
+            margin-bottom: 10px;
+        }
+
+        & .table-item__delete{
+            @media(max-width: 767px){
+                align-self: flex-end;
+            }
+        }
+        
+    }
+    }
+
+    // &__favourites-list{
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     margin: -10px;
+    //     padding-bottom: 44px;
+    //     // flex-grow: 1;
+    //     // width: 100%;
+    // }
+
+    // &__favourites-item{
+    //     display: block;
+    //     flex: 0 1 30%;
+    //     margin: 10px;
+    //     // max-width: 327px;
+
+    //     & .preview-card{
+    //         // max-width: 327px;
+    //     }
+
+    //     & .preview-card__image-box{
+    //         margin-bottom: 19px;
+    //     }
+
+    //     & .preview-card__favourite{
+    //         img{
+    //             width: 30px;
+    //             height: 26px;
+    //         }
+    //     }
+
+    //     & .preview-card__info{
+    //         flex-wrap: wrap;
+    //     }
+
+    //     & .preview-card__text{
+    //         margin-bottom: 20px;
+    //     }
+    // }
+}

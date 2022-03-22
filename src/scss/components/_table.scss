@@ -1,5 +1,6 @@
 .table{
     border-collapse: collapse;
+    align-self: start;
 
     &__header{
         height: 50px;
@@ -32,11 +33,15 @@
     }
 
     & .table-item{
+
+        position: relative;
+
         @media(max-width: 767px){
             display: flex;
             flex-direction: column;
             width: 100%;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
+            margin-top: 19px;
         }
 
         &__info{
@@ -45,7 +50,7 @@
             padding: 20px 0;
 
             @media(max-width: 767px){
-                padding: 39px 0 20px;
+                padding: 20px 0;
             }
 
         }
@@ -68,7 +73,8 @@
         }
 
         &__amount,
-        &__price{
+        &__price,
+        &__date{
             font-weight: 600;
             font-size: $font-size-large;
             line-height: 26px;
@@ -76,6 +82,12 @@
 
             @media(max-width: 767px){
                 border: none;
+            }
+        }
+
+        &__amount{
+            @media(max-width: 1279px){
+                margin-left: 120px;
             }
         }
 
@@ -121,25 +133,73 @@
             color: $sangria;
         }
 
+        &__status{
+            font-weight: 800;
+            font-size: $font-size-medium;
+            line-height: 24px;
+
+            @media(max-width: 767px){
+                justify-content: flex-end;
+            }
+
+            &--send{
+                color: $status-send;
+            }
+            &--delivered{
+                color: $status-delivered;
+            }
+            &--expected{
+                color: $status-expected;
+            }
+            &--canceled{
+                color: $status-canceled;
+            }
+        }
+
         &__delete{
+            position: relative;
+            width: 28px;
+            align-self: flex-end;
+
+            @media(max-width: 1279px){
+                // margin-top: -65px;
+                order: -1;
+            }
+
             @media(max-width: 767px){
                 border: none;
-                order: -1;
                 justify-content: flex-end;
                 margin-bottom: -19px;
             }
         }
 
         &__delete-btn{
+            position: absolute;
+            top: 20px;
             width: auto;
-            height: 18px;
+            height: 25px;
             border: none;
             background-color: transparent;
             cursor: pointer;
+            width: 36px;
+            height: 36px;
+            margin-left: -10px;
+            margin-top: -20px;
 
-            @media(max-width: 767px){
-                padding-top: 20px;
+            @media(max-width: 1279px){
+                top: 20px;
+                width: auto;
+                height: 25px;
+                margin-top: -10px;
+                
             }
+
+            // @media(max-width: 767px){
+            //     top: 20px;
+            //     width: auto;
+            //     height: 25px;
+            //     margin-top: -10px;
+            // }
         }
     }
 }

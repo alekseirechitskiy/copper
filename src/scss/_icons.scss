@@ -1,27 +1,66 @@
 .svg-heart-dims { 
     width: 30px; height: 29px; 
+    @media(max-width: 767px){
+        width: 20px;
+    }
+}
+
+.svg-heart-white-dims { 
+    width: 24px; height: 23px; 
 }
 
 .svg-user-dims{ 
     width: 30px;  
     height: 30px; 
+    @media(max-width: 767px){
+        width: 20px;
+    }
 }
+
+.svg-user-white-dims { 
+    width: 18px; height: 25px; 
+}
+
 .svg-shopping-cart-dims { 
     width: 28px;
     height: 28px;
+    @media(max-width: 767px){
+        width: 20px;
+    }
 }
 
 .svg-shopping-cart-grad-dims {
     width: 28px;
     height: 28px;
 }
+
+.svg-shopping-cart-white-dims { 
+    width: 25px; height: 27px; 
+}
+
 .svg-menu-dims{
     width: 20px;
     height: 20px; 
 }
-.svg-twitter-dims { max-width: none; width: auto; height: 17px; }
-.svg-facebook-dims { max-width: none; width: auto; height: 18px; }
-.svg-instagram-dims { max-width: none; width: auto; height: 18px; }
+.svg-twitter-dims { 
+    max-width: none; 
+    width: 20px; 
+    height: 17px;
+
+}
+.svg-facebook-dims { 
+    max-width: none; 
+    width: 18px; 
+    height: 18px; 
+
+}
+
+.svg-instagram-dims { 
+    max-width: none; 
+    width: 18px; 
+    height: 18px; 
+
+}
 
 .svg-arrow-left-dims { 
     width: 28px; 
@@ -35,3 +74,8 @@
 .svg-search-dims { width: 15px; height: 15px; }
 
 .svg-trash-dims { width: auto; height: 18px; }
+
+.svg-exit-dims { width: 18px; height: 18px; }
+.svg-eye-dims { width: 18px; height: 12px; }
+.svg-card-dims { width: 18px; height: 14px; }
+.svg-upload-dims { width: 16px; height: 16px; }

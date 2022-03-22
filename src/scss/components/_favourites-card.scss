@@ -1,0 +1,27 @@
+.favourites-card{
+    max-width: 331px;
+
+    @media(max-width: 1279px){
+        max-width: 100%;
+    }
+
+    img.favourites-card__heart{
+        width: 30px;
+    }
+
+    & .preview-card__image-box{
+        margin-bottom: 20px;
+    }
+    
+    & .preview-card__info{
+        flex-wrap: wrap;
+    }
+
+    & .preview-card__text{
+        margin-bottom: 20px;
+    }
+
+    & .preview-card__price{
+        margin-bottom: 0;
+    }
+}

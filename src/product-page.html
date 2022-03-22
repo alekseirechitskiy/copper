@@ -99,8 +99,14 @@
                             <span class="product-page__price-new">10 953 грн</span>
                             <span class="product-page__price-old">11 953 грн</span>
                         </div>
-                        <div class="product-page__input-box">
-                            <input class="product-page__number" type="number">
+                        <div class="product-page__input-box ">
+                            <div class="input-number">
+                                <button class="quantity-arrow-minus"> - </button>
+                                <input class="quantity-num" type="number" value="1" />
+                                <button class="quantity-arrow-plus"> + </button>
+                            </div>
+
+                            <!-- <input class="product-page__number input-number" type="number" value="1" min="1"> -->
                             <button class="product-page__btn button">Купить</button>
                         </div>
                         @@include('html/share-box.html',{})

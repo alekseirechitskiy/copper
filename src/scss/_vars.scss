@@ -2,12 +2,9 @@
 $screen-big: "(min-width: 1280px)";
 $screen-medium: "(min-width: 768px)";
 
-// Fonts
-$font-size-large: 20px;
-$font-size-medium: 18px;
-$font-size-normal: 16px;
-$font-size-small: 14px;
-$font-size-extraSmall: 12px;
+
+
+
 
 //Colors
 
@@ -21,5 +18,25 @@ $black-pearl: #031412;
 $sangria: #9B0000;
 $edward: #B3B9B8;
 $como: #4B7159;
+$observatory:#029281;
+$bahama-blue: #025E92;
+$limeade: #7E9202;
+$red-berry: #920202;
+
+$status-send: $observatory;
+$status-delivered: $bahama-blue;
+$status-expected: $limeade;
+$status-canceled: $red-berry;
+
+$success: $observatory;
+$unsuccess: $red-berry;
+
+
+// Fonts
+$font-size-large: 20px;
+$font-size-medium: 18px;
+$font-size-normal: 16px;
+$font-size-small: 14px;
+$font-size-extraSmall: 12px;
 
 $text-main-color: $black-pearl;

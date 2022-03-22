@@ -1,14 +1,15 @@
 .share-box{
     display: flex;
     align-items: center;
-    background-color: $grey;
 
     &__social-list{
         display: flex;
+        align-items: center;
     }
 
     &__list-item{
         margin-right: 18px;
+        height: 19px;
         
         &:last-child{
             margin-right: 0;
@@ -21,5 +22,13 @@
         line-height: 21px;
         font-weight: 800;
         margin-right: 50px;
+    }
+
+    &__social-link{
+
+        vertical-align: top;
+        svg{
+            fill: $como;
+        }
     }
 }

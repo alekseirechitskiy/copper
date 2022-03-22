@@ -18,6 +18,11 @@ body {
     width: 100%;
 }
 
+.wrapper-overflow-x{
+    position: relative;
+    overflow-x: hidden;
+}
+
 main{
     flex-grow: 1;
 }

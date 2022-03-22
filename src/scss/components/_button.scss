@@ -28,4 +28,22 @@
         color: $black-pearl;
         border: 1px solid $black-pearl;
     }
+
+    &--green-grad{
+        background: linear-gradient(278.32deg, #0B3F37 -7.03%, #CB8D62 136.33%);
+        border: 1px solid transparent;
+        border-left: transparent;
+    }
+
+    &--success{
+        background-color: $success;
+    }
+
+    &--unsuccess{
+        background-color: $unsuccess;
+    }
+
+    &--center-text{
+        text-align: center;
+    }
 }

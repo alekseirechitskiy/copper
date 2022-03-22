@@ -1,0 +1,23 @@
+.favourites{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    padding-bottom: 44px;
+    @media(max-width: 767px){
+        padding-bottom: 17px;
+    }
+
+    &__item{
+        flex: 1 1 30%;
+        margin: 10px;
+        width: 100%;
+
+        @media(max-width: 1279px){
+            flex: 1 1 47%;
+        }
+
+        @media(max-width: 767px){
+            flex: 1 1 100%;
+        }
+    }
+}
