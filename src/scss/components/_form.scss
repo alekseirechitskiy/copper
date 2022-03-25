@@ -1,4 +1,16 @@
 .form{
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
     &__top{
         text-align: center;
         padding: 45px 35px 30px;
@@ -185,17 +197,13 @@
         &--card{
             flex-basis: 48%;
 
-            &::after{
+            svg{
                 position: absolute;
                 content: "";
                 width: 18px;
                 height: 14px;
                 top: 18px;
                 right: 20px;
-                background-image: url("@img/icons/icons.svg#card");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position:  center;
             }
         }
 

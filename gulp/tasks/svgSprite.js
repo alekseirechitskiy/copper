@@ -10,13 +10,31 @@ export const sprite = () => {
         ))
         .pipe(svgSprite({
             mode: {
-                symbol: true,
+                // symbol: {
+                //     sprite: `../icons/icons.svg`,
+                //     example: true
+                // },
                 stack: {
                     sprite: `../icons/icons.svg`,
                     // Создавать страницу с перечнем иконок
                     example: true
                 }
             },
+            shape: {
+                transform: [
+                    {
+                        svgo: {
+                            plugins: [
+                                {
+                                    removeAttrs: {
+                                        attrs: ['fill', 'stroke']
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
         }))
         .pipe(app.gulp.dest(`${app.path.build.images}`));
 }

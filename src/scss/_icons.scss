@@ -1,29 +1,37 @@
 .svg-heart-dims { 
-    width: 30px; height: 29px; 
+    width: 30px; 
+    height: 29px; 
+    fill: $bottle-green;
     @media(max-width: 767px){
         width: 20px;
     }
 }
 
 .svg-heart-white-dims { 
-    width: 24px; height: 23px; 
+    width: 24px; 
+    height: 23px; 
+    fill: $white;
 }
 
 .svg-user-dims{ 
     width: 30px;  
     height: 30px; 
+    fill: $bottle-green;
     @media(max-width: 767px){
         width: 20px;
     }
 }
 
 .svg-user-white-dims { 
-    width: 18px; height: 25px; 
+    width: 18px; 
+    height: 25px; 
+    fill: $white;
 }
 
 .svg-shopping-cart-dims { 
     width: 28px;
     height: 28px;
+    fill: $bottle-green;
     @media(max-width: 767px){
         width: 20px;
     }
@@ -35,28 +43,31 @@
 }
 
 .svg-shopping-cart-white-dims { 
-    width: 25px; height: 27px; 
+    width: 25px; 
+    height: 27px; 
+    fill: $white;
 }
 
 .svg-menu-dims{
     width: 20px;
     height: 20px; 
+    fill: $white;
 }
 .svg-twitter-dims { 
-    max-width: none; 
+    // max-width: none; 
     width: 20px; 
     height: 17px;
 
 }
 .svg-facebook-dims { 
-    max-width: none; 
+    // max-width: none; 
     width: 18px; 
     height: 18px; 
 
 }
 
 .svg-instagram-dims { 
-    max-width: none; 
+    // max-width: none; 
     width: 18px; 
     height: 18px; 
 
@@ -69,6 +80,18 @@
 .svg-arrow-right-dims { 
     width: 28px; 
 }
+
+.svg-arrow-left-white-dims { 
+    width: 18px; 
+    height: 28px; 
+    fill: $white; 
+}
+
+.svg-arrow-right-wite-dims { 
+    width: 18px; 
+    height: 28px;
+    fill: $white; 
+}
 .svg-arrow-right-wite-bg-grad-dims { width: 89px; height: 50px; }
 
 .svg-search-dims { width: 15px; height: 15px; }
@@ -76,6 +99,15 @@
 .svg-trash-dims { width: auto; height: 18px; }
 
 .svg-exit-dims { width: 18px; height: 18px; }
-.svg-eye-dims { width: 18px; height: 12px; }
-.svg-card-dims { width: 18px; height: 14px; }
+.svg-eye-dims { 
+    width: 18px; 
+    height: 12px;
+    fill: $silver-chalice;
+
+}
+.svg-card-dims { 
+    width: 18px; 
+    height: 14px; 
+    fill: $silver-chalice;
+}
 .svg-upload-dims { width: 16px; height: 16px; }

@@ -1,39 +1,49 @@
 import $ from "jquery";
 import * as flsFunctions from "./modules/functions.js"
 import slickModule from './modules/slickModule.js';
-import ispin from './modules/ispinjs.js';
+// import ispin from './modules/ispinjs.js';
 import mixitup from 'mixitup';
 import inputNumber from "./modules/inputNumber.js";
+import select from "./modules/select.js";
 
 flsFunctions.isWebp();
 flsFunctions.isIndex();
 slickModule();
 inputNumber();
+select();
 
-
-
-// ispin();
-// inputNumber();
 // dotdotdot();
+// let aaa = $('.custom-select__option')[0];
+// // console.log($('.custom-select__option')[0].hasClass());
+// console.log(aaa.prop('classList'));
 
 
+// let elemAll = $('.custom-select__option')[0];
+// let elem = $('.custom-select__option')[2];
+// let elem2 = $('.custom-select__option')[3];
+// elemAll.setAttribute('data-filter', 'all');
+// elem.setAttribute('data-filter', '.category-a');
+// elem2.setAttribute('data-filter', '.category-b');
+// console.log(elemAll);
+// console.log(elem);
+// console.log(elem2);
 
-// var el = document.querySelector('.product-page__number');
-// var spinner = new ISpin(el, {
-//     // options with defaults
-//     wrapperClass: 'ispin-wrapper',
-//     buttonsClass: 'ispin-button',
-//     step: 1,
-//     pageStep: 10,
-//     disabled: false,
-//     repeatInterval: 200,
-//     wrapOverflow: false,
-//     parse: Number,
-//     format: String
-// });
 
-$('.pagination__link').on('click', function () {
-    $('.pagination__link').removeClass('pagination__link--active');
+$(window).on('hashchange', function () {
+    //делаем что-то, когда поменяется хеш (часть в URL после #)
+    console.log('sdfsdff');
+    if (location.hash === "#favourites") {
+        $('.tabs__navigation-item').removeClass('tabs__navigation-item--active');
+        $('#favourites').addClass('tabs__navigation-item--active');
+    }
+});
+
+$('.slider__favourite').on('click', function () {
+    $($(this)).toggleClass('slider__favourite--liked');
+});
+
+$('.pagination__link--number').on('click', function () {
+    $('.pagination__link--number').removeClass('pagination__link--active');
     $($(this)).addClass('pagination__link--active');
 });
 
@@ -66,10 +76,10 @@ $('.table-item__delete-btn').on('click', function () {
 $('.user-header__btn-enter').on('click', function () {
     $('.user-header').remove();
     $('.user-header-authorized').css('display', 'block');
-    $('.offer-page__input-box').css('display', 'flex');
+    $('.order-page__input-box').css('display', 'flex');
 });
 
-$('.offer-page__input-box-btn').on('click', function () {
+$('.order-page__input-box-btn').on('click', function () {
     let value = $('.form__input--small').val();
     if (value !== '') {
         $('.total-box__discount').css('display', 'flex');
@@ -85,10 +95,12 @@ $('.form__radio').on('click', function () {
 
 $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
+    $('#body').css('overflow', 'hidden');
 });
 
 $('.menu__close').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
+    $('#body').css('overflow', 'auto');
 });
 
 
@@ -107,7 +119,7 @@ $(".footer__btn, .footer__logo").on("click", function (event) {
 });
 
 var mixer = mixitup('.catalog__list');
-ispin();
+// ispin();
 
 
 

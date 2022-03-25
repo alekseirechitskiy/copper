@@ -12,17 +12,25 @@
     }
 
     @media(max-width: 767px){
-        height: 518px;
-        background-image: url("@img/offer-bg-767.png");
-        background-position: center;
+        height: 483px;
+        background-image: url("@img/offer-bg-1.jpg");
+        background-size: cover;
+        background-position: center bottom; 
     }
 
     &__inner{
         display: flex;
         align-items: flex-start;
+        height: 483px;
+
+        @media(max-width: 1279px){
+            height: 518px;
+        }
 
         @media(max-width: 767px){
+            height: 484px;
             flex-wrap: wrap;
+            
         }
     }
 
@@ -51,6 +59,8 @@
             width: 100%;
             font-size: 60px;
             line-height: 45px;
+            padding: 0;
+            margin-bottom: 20px;
         }
     }
 
@@ -67,24 +77,38 @@
             font-size: $font-size-large;
             line-height: 19px;
         }
+
         @media(max-width: 767px){
             max-width: 165px;
             font-size: $font-size-small;
             line-height: 13px;
+            margin-bottom: 12px;
         }
     }
 
-
     &__image{
-        margin-top: -214px;
+        // margin-top: -214px;
+        margin-top: auto;
+        margin-bottom: -5px;
+        margin-left: 200px;
 
         @media(max-width: 1279px){
-            margin-top: -179px;
-            margin-left: -180px;
+            margin-left: -100px;
+            // margin-top: -179px;
+            // margin-left: -180px;
         }
 
         @media(max-width: 767px){
-            display: none;
+            // display: none;
+            margin: 0 auto -45px;
+            height: 222px;
+        }
+    }
+
+    &__link{
+        &:hover{
+            border-color: $white;
+            color: $white;
         }
     }
 }

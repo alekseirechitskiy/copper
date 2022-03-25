@@ -36,9 +36,7 @@
                     <div class="product-page__main">
                         <div class="product-page__slider slider">
                             <div class="slider__sale-marker">Sale</div>
-                            <div class="slider__favourite">
-                                <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
-                            </div>
+                            <div class="slider__favourite slider__favourite--liked"></div>
                             <div class="slider-thumb">
                                 <div class="slider-thumb__item">
                                     <img class="slider-thumb__image" src="@img/slider-thumb-1.jpg" alt="product image">
@@ -100,14 +98,10 @@
                             <span class="product-page__price-old">11 953 грн</span>
                         </div>
                         <div class="product-page__input-box ">
-                            <div class="input-number">
-                                <button class="quantity-arrow-minus"> - </button>
-                                <input class="quantity-num" type="number" value="1" />
-                                <button class="quantity-arrow-plus"> + </button>
-                            </div>
+                            @@include('html/input-number.html',{})
 
                             <!-- <input class="product-page__number input-number" type="number" value="1" min="1"> -->
-                            <button class="product-page__btn button">Купить</button>
+                            <a class="product-page__btn button" href="cart.html">Купить</a>
                         </div>
                         @@include('html/share-box.html',{})
                     </div>
@@ -169,57 +163,49 @@
                         Вам также будет интересно…
                     </h2>
                     <div class="section-w-slider__slider">
-                        <div class="preview-card section-w-slider__slider-item">
+                        <a class="preview-card section-w-slider__slider-item" href="product-page.html">
                             <div class="preview-card__image-box">
-                                <div class="preview-card__favourite">
-                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
-                                </div>
+                                <div class="preview-card__favourite"></div>
                                 <img src="@img/product-1.jpg" alt="preview-card image">
                             </div>
                             <div class="preview-card__info">
                                 <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
                                 <p class="preview-card__price">1 953 грн</p>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="preview-card section-w-slider__slider-item">
+                        <a class="preview-card section-w-slider__slider-item" href="product-page.html">
                             <div class="preview-card__image-box">
-                                <div class="preview-card__favourite">
-                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
-                                </div>
+                                <div class="preview-card__favourite"></div>
                                 <img src="@img/product-2.jpg" alt="preview-card image">
                             </div>
                             <div class="preview-card__info">
                                 <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
                                 <p class="preview-card__price">1 953 грн</p>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="preview-card section-w-slider__slider-item">
+                        <a class="preview-card section-w-slider__slider-item" href="product-page.html">
                             <div class="preview-card__image-box">
-                                <div class="preview-card__favourite">
-                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
-                                </div>
+                                <div class="preview-card__favourite"></div>
                                 <img src="@img/product-3.jpg" alt="preview-card image">
                             </div>
                             <div class="preview-card__info">
                                 <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
                                 <p class="preview-card__price">1 953 грн</p>
                             </div>
-                        </div>
+                        </a>
 
-                        <div class="preview-card section-w-slider__slider-item">
+                        <a class="preview-card section-w-slider__slider-item" href="product-page.html">
                             <div class="preview-card__image-box">
-                                <div class="preview-card__favourite">
-                                    <img src="@img/icons/icons.svg#heart" class="svg-heart-dims" alt="heart" />
-                                </div>
+                                <div class="preview-card__favourite"></div>
                                 <img src="@img/product-4.jpg" alt="preview-card image">
                             </div>
                             <div class="preview-card__info">
                                 <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
                                 <p class="preview-card__price">1 953 грн</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <a class="product-page__interest-link section-w-slider__link button" href="catalog.html">Перейти в
                         каталог</a>

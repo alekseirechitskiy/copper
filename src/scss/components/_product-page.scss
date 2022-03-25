@@ -334,11 +334,7 @@
     }
 
     &__interest-link{
-        display: none;
-
-        @media(max-width: 1279px){
-            display: block;
-        }
+        display: block;
 
         @media(max-width: 767px){
             width: 100%;
@@ -397,9 +393,21 @@
         right: 0;
         background-color: $white;
         cursor: pointer;
+        background-color: $white;
+        background-image: url("@img/heart-black.png");
+        background-repeat: no-repeat;
+        background-position: center;
 
-        img{
-            width: 100%;
+            @media(max-width: 1279px){
+                background-size: 58%;
+            }
+
+        &--liked{
+            background-image: url("@img/heart-grad.png");
+
+            @media(max-width: 1279px){
+                background-size: 58%;
+            }
         }
         
         @media(max-width: 1279px){

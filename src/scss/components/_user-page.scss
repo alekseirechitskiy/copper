@@ -101,6 +101,12 @@
             @media(max-width: 767px){
                 flex-direction: row;
             }
+
+            & .table-item__delete-btn{
+                @media(max-width: 767px){
+                    top: 20px;
+                }
+            }
         }
     
         
@@ -166,7 +172,8 @@
             @media(max-width: 767px){
                 align-self: flex-end;
             }
-        }
+        }  
+
         
     }
     }

@@ -15,11 +15,16 @@
     }
 
     &__slider-item{
-        padding: 0 15px;
+        // padding: 0 15px;
+
+        flex: 1 30%;
+        // justify-content: space-between;
+        // margin: 0 15px;
     }
 
     & .slick-list{
         overflow: hidden;
+        margin: 0 -15px;
 
         @media(max-width: 1279px){
             margin: 0 -15px;
@@ -28,10 +33,12 @@
     }
 
     & .slick-track{
+        // overflow: hidden;
         display: flex;
     }
 
     & .slick-slide{
+        margin: 0 15px;
         text-align: center;
     }
 
@@ -55,15 +62,14 @@
         left: 0;
         text-align: right;
         padding-right: 20px;
-        background-image: url("@img/icons/icons.svg#arrow-left");
+        background-image: url("@img/arrow-left-black.png");
         background-repeat: no-repeat;
-        background-position: 70% center;
-        background-size: 55%;
+        background-position: 57% center;
         border-left: none;
 
         &:hover{
             cursor: pointer;
-            background: url("@img/icons/icons.svg#arrow-right-wite-bg-grad") 0 0 no-repeat;
+            background: url("@img/arrow-right-bg-grad.jpg")0 0 no-repeat;
             transform: rotate(180deg);
             border: transparent;
         }
@@ -77,15 +83,14 @@
         right: 0;
         text-align: left;
         padding-left: 20px;
-        background-image: url("@img/icons/icons.svg#arrow-right");
+        background-image: url("@img/arrow-right-black.png");
         background-repeat: no-repeat;
-        background-position: 35% center;
-        background-size: 55%;
+        background-position: 43% center;
         border-right: none;
 
         &:hover{
             cursor: pointer;
-            background: url("@img/icons/icons.svg#arrow-right-wite-bg-grad") 0 0 no-repeat;
+            background: url("@img/arrow-right-bg-grad.jpg") 0 0 no-repeat;
             border: transparent;
         }
 
@@ -99,6 +104,14 @@
         align-items: center;
         justify-content: center;
         margin-top: 45px;
+
+        @media(max-width: 1279px){
+            margin-top: 20px;
+        }
+
+        @media(max-width: 767px){
+            margin-top: 10px;
+        }
 
         .slick-active{
             button{

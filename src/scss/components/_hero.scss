@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
+    position: relative;
 
     @media(max-width: 1279px){
         background-image: url("@img/hero-bg-1279.jpg");
@@ -14,19 +15,134 @@
         background-image: url("@img/hero-bg-767.jpg");
          background-position: right;
     }
-    
-    // &.header{
-    //     background: none;
-    //     background-color: transparent;
-    // }
-    
+
     &__inner{
-        position: relative;
-        // margin-top: 140px;
         height: calc(100vh - 140px);
-        overflow: hidden
+        overflow: hidden;
+
+        @media(max-width: 1279px){
+            height: calc(100vh - 168px);
+        }
+
+        @media(max-width: 767px){
+            height: calc(100vh - 90px);
+        }
+        
+
     }
 
+    //стили slick-слайдера НАЧАЛО
+
+    & .hero__slider{
+        min-width: 0;
+
+        & .slick-list{
+            height: 100%;
+            overflow: hidden;
+        }
+
+        & .slick-track{
+            height: 100%;
+            display: flex;
+        }
+
+        & .slick-arrow{
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            position: absolute;
+            width: 87px;
+            height: 50px;
+            margin-top: -50px;
+            z-index: 1;
+            font-size: 0;
+            background-color: transparent;
+            border: 1px solid $white;
+            
+            img{
+                display: inline-block;
+            }
+        }
+
+        & .slick-next{
+            right: 0;
+            text-align: left;
+            padding-left: 20px;
+            background-image: url("@img/arrow-right-white.png");
+            background-repeat: no-repeat;
+            background-position: 43% center;
+            border-right: none;
+
+            &:hover{
+                cursor: pointer;
+                background: url("@img/arrow-right-bg-grad.jpg") 0 0 no-repeat;
+                border: transparent;
+            }
+
+            img{
+               margin-top: 5px;
+            }
+        }
+
+        & .slick-prev{
+            left: 0;
+            text-align: right;
+            padding-right: 22px;
+            background-image: url("@img/arrow-left-white.png");
+            background-repeat: no-repeat;
+            background-position: 57% center;
+            border-left: none;
+
+            &:hover{
+                cursor: pointer;
+                background: url("@img/arrow-right-bg-grad.jpg") 0 0 no-repeat;
+                transform: rotate(180deg);
+                border: transparent;
+            }
+
+            img{
+               margin-top: 5px;
+            }
+        }
+
+        & .slick-dots{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 150px;
+            z-index: 999;
+
+            
+
+            li{
+                line-height: 0;
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                button{
+                    cursor: pointer;
+                    width: 12px;
+                    height: 12px;
+                    background-color: $white;
+                    border: none;
+                    font-size: 0;
+                    line-height: 0;
+                    
+                }  
+            }
+
+            & .slick-active{
+                button{
+                    background: linear-gradient(65.81deg, #5E3928 -24.09%, #E4A16F 104.02%);
+                }
+            }
+        }
+
+    }
+
+    //стили slick-слайдера КОНЕЦ
     
     &__image{
         position: absolute;
@@ -43,13 +159,20 @@
             background-color: $white;
         }
     }
+
+    &__slider{
+        height: 100%;
+    }
     
     .slider-item{
-        height: 100%;
+        min-width: 0;
+        position: relative;
+        height: 100vh;
         display: flex;
         justify-content: space-between;
         
         &__info{
+            height: 100%;
             max-width: 737px;
             margin-top: 145px;
 
@@ -134,17 +257,28 @@
         }
 
         &__image-box{
-            position: absolute;
-            right: 60px;
-            top: -40%;
+            margin-top: auto;
+            margin-right: auto;
+            margin-left: -70px;
+            // position: absolute;
+
+            // right: 260px;
+            // top: -40%;
             @media(max-width: 1279px){
+                margin-top: auto;
                 // bottom: 0;
-                top: -50px;
-                right: -180px;
+                // top: -50px;
+                // right: -180px;
             }
             @media(max-width: 767px){
-                right: -380px;
-                top: 120px;
+                margin-bottom: 80px;
+                margin-right: -100px;
+                margin-left: -40px;
+
+                //  margin-left: -50px;
+
+                // right: -380px;
+                // top: 120px;
             }
         }
 
@@ -152,11 +286,11 @@
             position: relative;
 
             @media(max-width: 1279px){
-                width: 70%;
+                width: 85%;
             }
 
             @media(max-width: 767px){
-                width: 60%;
+                width: 75%;
             }
         }
 

@@ -5,6 +5,21 @@ import slick from 'slick-carousel';
 
 export default function () {
 
+    $('.hero__slider').slick({
+        fade: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1279,
+                settings: {
+                    arrows: false
+                }
+            }
+        ],
+    });
+
     $('.slider-thumb').slick({
         asNavFor: '.slider-big',
         vertical: true,
@@ -20,7 +35,6 @@ export default function () {
         asNavFor: '.slider-thumb',
         arrows: false,
         fade: true,
-
     });
 
     $('.section-w-slider__slider').slick({
