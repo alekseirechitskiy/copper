@@ -14,6 +14,7 @@
     &__top{
         text-align: center;
         padding: 45px 35px 30px;
+
         @media(max-width: 767px){
             padding: 28px 21px 30px;
         }
@@ -98,7 +99,6 @@
         
         & .form__input{
             width: 68%;
-            
         }
     }
 
@@ -137,17 +137,14 @@
                     }
                 }
 
-
                 & .form__input-label--card-date{
                     flex-basis: 48%;
                 }
+
                 & .form__input-label--card-cvv{
                     flex-basis: 48%;
                 }
-
-
             }
-
         }
 
         & .form__input{
@@ -231,10 +228,7 @@
                 content:"CVV: "
             }
         }
-        
     }
-
-    
 
     &__input{
         width: 100%;
@@ -271,8 +265,6 @@
             color: $silver-chalice;
         }
     }
-
-
 
     &__text{
         color: $white;
@@ -393,4 +385,5 @@
         font-size: $font-size-small;
         line-height: 19px;
     }
+    
 }

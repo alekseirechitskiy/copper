@@ -18,7 +18,6 @@
         line-height: 34px;
     }
 
-
     &::after{
         position: absolute;
         content: "";
@@ -51,4 +50,5 @@
             background-color: $black-pearl;
         }
     }
+    
 }

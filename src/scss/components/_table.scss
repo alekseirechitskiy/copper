@@ -33,7 +33,6 @@
     }
 
     & .table-item{
-
         position: relative;
 
         @media(max-width: 767px){
@@ -52,7 +51,6 @@
             @media(max-width: 767px){
                 padding: 20px 0;
             }
-
         }
 
         &__image{
@@ -90,7 +88,6 @@
                 margin-left: 120px;
             }
         }
-
 
         &__price{
             @media(max-width: 767px){
@@ -145,12 +142,15 @@
             &--send{
                 color: $status-send;
             }
+
             &--delivered{
                 color: $status-delivered;
             }
+
             &--expected{
                 color: $status-expected;
             }
+
             &--canceled{
                 color: $status-canceled;
             }
@@ -162,7 +162,6 @@
             align-self: flex-end;
 
             @media(max-width: 1279px){
-                // margin-top: -65px;
                 order: -1;
             }
 
@@ -191,19 +190,12 @@
                 width: auto;
                 height: 25px;
                 margin-top: -10px;
-                
             }
 
             @media(max-width: 767px){
                 top: 5px;
             }
-
-            // @media(max-width: 767px){
-            //     top: 20px;
-            //     width: auto;
-            //     height: 25px;
-            //     margin-top: -10px;
-            // }
         }
     }
+    
 }

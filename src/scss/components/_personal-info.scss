@@ -84,6 +84,7 @@
         bottom: 180px;
         right: -400px;
         transition: all .3s;
+
         & div{
             margin: 10px 0;
         }
@@ -139,6 +140,6 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
-
     }
+    
 }

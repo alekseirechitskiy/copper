@@ -214,7 +214,6 @@
 
     &__number{
         @media(max-width: 767px){
-            
             width: 50%;
         }
     }
@@ -329,8 +328,6 @@
         @media(max-width: 767px){
             margin-bottom: 15px;
         }
-
-        
     }
 
     &__interest-link{
@@ -340,7 +337,6 @@
             width: 100%;
         }
     }
-
 }
 
 //slick-слайдер карточки продукта
@@ -467,7 +463,6 @@
             height: 98px;
             width: 89px;
             display: block;
-            // margin-bottom: 20px;
         }
     }
 

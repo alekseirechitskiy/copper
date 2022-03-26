@@ -29,16 +29,10 @@
         @media(max-width: 1279px){
             flex-basis: 45%;
         }
+
         @media(max-width: 767px){
             flex-basis: 39%;
         }
-
-        // &:nth-child(7){
-        //     width: 328px;
-        //     flex-grow: 0;
-        // }
-        // &:nth-child(8){
-        //     flex-grow: 0;
-        // }
     }
+    
 }

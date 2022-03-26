@@ -2,15 +2,15 @@ import $ from "jquery";
 import * as flsFunctions from "./modules/functions.js"
 import slickModule from './modules/slickModule.js';
 // import ispin from './modules/ispinjs.js';
-import mixitup from 'mixitup';
+import mixitup from './modules/mixItUp.js';
+// import mixitup from 'mixitup';
 import inputNumber from "./modules/inputNumber.js";
 import select from "./modules/select.js";
 
 flsFunctions.isWebp();
 flsFunctions.isIndex();
-slickModule();
-inputNumber();
-select();
+
+
 
 // dotdotdot();
 // let aaa = $('.custom-select__option')[0];
@@ -72,7 +72,7 @@ $('.table-item__delete-btn').on('click', function () {
 });
 
 
-//offer-page enter user's account
+//вход в аккаунт пользователя на orderer-page
 $('.user-header__btn-enter').on('click', function () {
     $('.user-header').remove();
     $('.user-header-authorized').css('display', 'block');
@@ -118,8 +118,11 @@ $(".footer__btn, .footer__logo").on("click", function (event) {
     $('body,html').animate({ scrollTop: top }, 1500);
 });
 
-var mixer = mixitup('.catalog__list');
-// ispin();
+slickModule();
+inputNumber();
+select();
+mixitup();
+// var mixer = mixitup('.catalog__list');
 
 
 

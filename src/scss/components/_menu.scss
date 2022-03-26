@@ -1,5 +1,4 @@
 .menu{
-
     @media(max-width: 1278px){
         order: 1;
         width: 100%;
@@ -43,6 +42,7 @@
 
     &__item + .menu__item{
         margin-left: 50px;
+
         @media(max-width: 767px){
             margin-left: 0;
         }
@@ -56,7 +56,6 @@
         font-weight: 500;
 
         @media(max-width: 767px){
-            // font-weight: 500;
             font-size: 30px;
             line-height: 210.9%;
             border: none;
@@ -75,15 +74,6 @@
             @media(max-width: 767px){
                 border: none;
             }
-
-            // &::after{
-            //     display: block;
-            //     content: attr(title);
-            //     font-weight: 700;
-            //     overflow: hidden;
-            //     visibility: hidden;
-            //     height: 0;
-            // }
         }
     }
 
@@ -115,6 +105,7 @@
         background-color: transparent;
         cursor: pointer;
         position: relative;
+
         &::before{
             position: absolute;
             content: "";
@@ -126,6 +117,7 @@
             border-radius: 50px;
             transform: rotate(45deg);
         }
+
         &::after{
             position: absolute;
             content: "";
@@ -138,4 +130,5 @@
             transform: rotate(-45deg);
         }
     }
+    
 }

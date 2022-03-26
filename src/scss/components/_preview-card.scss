@@ -1,6 +1,5 @@
 .preview-card{
     max-width: 476px;
-    // display: inline-block;
     display: block;
 
     @media(max-width: 1279px){
@@ -61,7 +60,6 @@
         @media(max-width: 1279px){
             max-width: 168px;
         }
-        
     }
 
     &__price{
@@ -74,4 +72,5 @@
             line-height: 19px;
         }
     }
+    
 }

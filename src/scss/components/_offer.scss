@@ -30,7 +30,6 @@
         @media(max-width: 767px){
             height: 484px;
             flex-wrap: wrap;
-            
         }
     }
 
@@ -46,6 +45,7 @@
 
     &__numbers{
         width: 420px;
+
         &::after{
             display: none;
         }
@@ -87,19 +87,15 @@
     }
 
     &__image{
-        // margin-top: -214px;
         margin-top: auto;
         margin-bottom: -5px;
         margin-left: 200px;
 
         @media(max-width: 1279px){
             margin-left: -100px;
-            // margin-top: -179px;
-            // margin-left: -180px;
         }
 
         @media(max-width: 767px){
-            // display: none;
             margin: 0 auto -45px;
             height: 222px;
         }
@@ -111,4 +107,5 @@
             color: $white;
         }
     }
+    
 }

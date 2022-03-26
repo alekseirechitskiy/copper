@@ -77,6 +77,7 @@
                 background: linear-gradient(351.3deg, rgba(203, 141, 98, 0) 33.24%, #CB8D62 104.72%);
                 transform: rotate(180deg);
             }
+
             & .catalog__controls-text{
                 font-weight: 800;
 
@@ -171,7 +172,6 @@
                 flex: 1 100%;
             }
         }
-
 
         &:hover{
             box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
@@ -279,7 +279,6 @@
             right: 0;
             left: auto;
         }
-
     }
 
     &__text{
@@ -292,4 +291,5 @@
         padding-right: 8px;
         font-weight: 700;
     }
+    
 }
