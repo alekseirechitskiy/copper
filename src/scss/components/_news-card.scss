@@ -5,6 +5,7 @@
     &__image-box{
         position: relative;
         width: 100%;
+        margin-bottom: 26px;
     }
 
     &__image{
@@ -42,8 +43,9 @@
     }
 
     &__text{
-        padding: 26px 0 20px;
+        // padding: 26px 0 20px;
         margin: 0;
+        margin-bottom: 20px;
         font-size: $font-size-small;
         line-height: 19px;
         max-width: 617px;

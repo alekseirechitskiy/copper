@@ -6,37 +6,28 @@ import mixitup from './modules/mixItUp.js';
 // import mixitup from 'mixitup';
 import inputNumber from "./modules/inputNumber.js";
 import select from "./modules/select.js";
+import dotdotdot from "./modules/dotdotdotModule.js";
 
 flsFunctions.isWebp();
 flsFunctions.isIndex();
 
+if (window.location.hash === "#favourites") {
+    $('.tabs__navigation-item').removeClass('tabs__navigation-item--active');
+    $('.tabs__navigation-item--favs').addClass('tabs__navigation-item--active');
+    $('.tabs__content-tiem').removeClass('tabs__content-tiem--active')
+    $('#favourites').addClass('tabs__content-tiem--active')
+}
+console.log(window.location.hash);
 
 
-// dotdotdot();
-// let aaa = $('.custom-select__option')[0];
-// // console.log($('.custom-select__option')[0].hasClass());
-// console.log(aaa.prop('classList'));
-
-
-// let elemAll = $('.custom-select__option')[0];
-// let elem = $('.custom-select__option')[2];
-// let elem2 = $('.custom-select__option')[3];
-// elemAll.setAttribute('data-filter', 'all');
-// elem.setAttribute('data-filter', '.category-a');
-// elem2.setAttribute('data-filter', '.category-b');
-// console.log(elemAll);
-// console.log(elem);
-// console.log(elem2);
-
-
-$(window).on('hashchange', function () {
-    //делаем что-то, когда поменяется хеш (часть в URL после #)
-    console.log('sdfsdff');
-    if (location.hash === "#favourites") {
-        $('.tabs__navigation-item').removeClass('tabs__navigation-item--active');
-        $('#favourites').addClass('tabs__navigation-item--active');
-    }
-});
+// $(window).on('hashchange', function () {
+//     //делаем что-то, когда поменяется хеш (часть в URL после #)
+//     console.log('sdfsdff');
+//     if (location.hash === "#favourites") {
+//         $('.tabs__navigation-item').removeClass('tabs__navigation-item--active');
+//         $('.tabs__navigation-item--favourites').addClass('tabs__navigation-item--active');
+//     }
+// });
 
 $('.slider__favourite').on('click', function () {
     $($(this)).toggleClass('slider__favourite--liked');
@@ -121,6 +112,7 @@ $(".footer__btn, .footer__logo").on("click", function (event) {
 slickModule();
 inputNumber();
 select();
+dotdotdot();
 mixitup();
 // var mixer = mixitup('.catalog__list');
 

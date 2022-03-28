@@ -26,12 +26,12 @@
         position: absolute;
         right: 0;
         background-color: $white;
-        background-image: url("@img/heart-black.png");
+        background-image: url("@img/svg-icons/heart-black.svg");
         background-repeat: no-repeat;
         background-position: center;
 
         &--liked{
-            background-image: url("@img/heart-grad.png");
+            background-image: url("@img/svg-icons/heart-grad.svg");
 
             @media(max-width: 1279px){
                 background-size: 58%;

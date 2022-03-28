@@ -24,15 +24,10 @@
         margin-bottom: 30px;
         color: $white;
         text-transform: none;
-        padding-left: 20px;
+        padding-left: 65px;
         text-align: left;
         background: linear-gradient(278.32deg, #0B3F37 -7.03%, #CB8D62 136.33%);
         position: relative;
-
-        svg{
-            fill: $white;
-            margin-right: 20px;
-        }
 
         @media(max-width: 1279px){
             width: 32%;
@@ -42,6 +37,36 @@
         @media(max-width: 767px){
             width: 100%;
             margin-bottom: 20px;
+        }
+
+        &::before{
+            position: absolute;
+            content: "";
+            width: 25px;
+            height: 25px;
+            top: 13px;
+            
+            
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(1){
+            &::before{
+                left: 20px;
+                background-image: url("@img/svg-icons/user-white.svg");
+            }
+        }
+        &:nth-child(2){
+            &::before{
+                left: 16px;
+                background-image: url("@img/svg-icons/shopping-cart-white.svg");
+            }   
+        }
+        &:nth-child(3){
+            &::before{
+                left: 17px;
+                background-image: url("@img/svg-icons/heart-white.svg");
+            }
         }
 
         &:hover{
@@ -83,7 +108,7 @@
             height: 18px;
             top: -2px;
             left: 0;
-            background-image: url("@img/icons/icons.svg#exit");
+            background-image: url("@img/svg-icons/exit.svg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;

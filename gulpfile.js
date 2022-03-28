@@ -46,7 +46,7 @@ const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
 
 //Построение сценариев выполнения задач
-const dev = gulp.series(cleanDist, sprite, mainTasks, gulp.parallel(watcher, server));
+const dev = gulp.series(cleanDist, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(cleanDist, mainTasks);
 const deployZIP = gulp.series(cleanDist, mainTasks, zip);
 const deployFTP = gulp.series(cleanDist, mainTasks, ftp);

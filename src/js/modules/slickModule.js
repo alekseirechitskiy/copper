@@ -12,7 +12,7 @@ export default function () {
         autoplaySpeed: 3000,
         responsive: [
             {
-                breakpoint: 1279,
+                breakpoint: 1570,
                 settings: {
                     arrows: false
                 }
