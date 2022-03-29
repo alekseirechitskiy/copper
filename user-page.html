@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220329120433">
+    <title>Copper - Личный кабинет</title>
+</head>
+
+<body id="body">
+
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo" href="index.html">
+                <img class="logo__image" src="images/logo.png" alt="logo image">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <div class="user-panel__inside-menu user-panel">
+                        <li class="user-panel__item-favourites user-panel__item">
+                            <a class="user-panel__link user-panel__link--favs" href="user-page.html#favourites">
+                                <img src="images/svg-icons/heart-green.svg" alt="heart icon">
+                            </a>
+                        </li>
+                        <li class="user-panel__item-user user-panel__item">
+                            <a class="user-panel__link" href="user-page.html">
+                                <img src="images/svg-icons/user-green.svg" alt=" uset icon">
+                            </a>
+                        </li>
+                        <li class="user-panel__item">
+                            <span class="user-panel__count">2</span>
+                            <a class="user-panel__link" href="cart.html">
+                                <img src="images/svg-icons/shopping-cart-grad.svg" alt=" shopping cart icon">
+                            </a>
+                        </li>
+                        <button class="menu__close">
+                        </button>
+                    </div>
+                    <li class="menu__item">
+                        <a class="menu__link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="news.html">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="order-page.html">Доставка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-panel">
+                <ul class="user-panel__list">
+                    <li class="user-panel__item-favourites user-panel__item">
+                        <a class="user-panel__link user-panel__link--favs" href="user-page.html#favourites">
+                            <img src="images/svg-icons/heart-green.svg" alt=" icon">
+                        </a>
+                    </li>
+                    <li class="user-panel__item">
+                        <a class="user-panel__link" href="user-page.html">
+                            <img src="images/svg-icons/user-green.svg" alt="user icon">
+                        </a>
+                    </li>
+                    <li class="user-panel__item">
+                        <span class="user-panel__count">2</span>
+                        <a class="user-panel__link" href="cart.html">
+                            <img src="images/svg-icons/shopping-cart-grad.svg" alt="shopping cart icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="menu__btn">
+                <img src="images/svg-icons/menu.svg" alt="menu icon">
+            </button>
+        </div>
+    </div>
+</header>
+    <main>
+        <section class="user-page">
+            <div class="personal-info__messages-box">
+                <div class="message message--success">
+                    Данные сохраненны
+                </div>
+                <div class="message message--unsuccess">
+                    Данные не сохраненны
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="user-page__title section-title">Личный кабинет</h2>
+                <div class="user-page__inner">
+                    <div class="tabs user-page__tabs">
+                        <div class="tabs__navigation">
+                            <a class="tabs__navigation-item tabs__navigation-item--active button" href="#details">
+                                Детали профиля
+                            </a>
+                            <a class="tabs__navigation-item button" href="#orders">
+                                Заказы
+                            </a>
+                            <a class="tabs__navigation-item tabs__navigation-item--favs button" href="#favourites">
+                                Список желаемого
+                            </a>
+                            <div class="tabs__navigation-link-box">
+                                <a class="tabs__navigation-link" href="#">Выйти</a>
+                            </div>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="personal-info tabs__content-tiem tabs__content-tiem--active" id="details">
+                                <div class="personal-info__top">
+                                    <img class="personal-info__avatr" src="images/user-avatar-big.jpg" alt="user avatar">
+                                    <div class="personal-info__name-box">
+                                        <p class="personal-info__text">
+                                            Добрый день
+                                        </p>
+                                        <h3 class="personal-info__name">
+                                            Иван Иванов
+                                        </h3>
+                                        <div class="personal-info__upload">
+                                            <button class="personal-info__upload-btn" type="button">
+                                                <img src="images/upload-icon.png" alt="upload">
+                                            </button>
+                                            <p class="personal-info__upload-text">Загрузить фото
+                                                <span>(jpeg, png)</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form personal-info__form">
+                                    <ul class="form__list personal-info__form-list">
+                                        <li class="form__item personal-info__form-item">
+                                            <div class="form__inputs-row">
+                                                <input class="form__input" type="tel" placeholder="Имя">
+                                                <input class="form__input" type="email" placeholder="E-mail">
+                                            </div>
+                                            <div class="form__inputs-row">
+                                                <input class="form__input" type="text" placeholder="Страна">
+                                                <input class="form__input" type="text" placeholder="Город">
+                                            </div>
+                                            <div class="form__inputs-row">
+                                                <input class="form__input" type="text" placeholder="Улица">
+                                            </div>
+                                        </li>
+                                        <li class="form__item personal-info__form-item">
+                                            <h5 class="form__item-title personal-info__form-item">
+                                                Пароль
+                                            </h5>
+                                            <div class="form__inputs-row">
+                                                <label class="form__input-label form__input-label--password">
+                                                    <input class="form__input form__input--password" type="password">
+                                                    <button class="form__input-inside-btn">
+                                                        <img src="images/svg-icons/eye.svg" alt="eye icon">
+                                                    </button>
+                                                </label>
+                                                <a class="form__item-btn button button--green-grad" href="#">
+                                                    Сменить пароль
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="form__item personal-info__form-item ">
+                                            <h5 class="form__item-title personal-info__form-item">
+                                                Платежная система
+                                            </h5>
+                                            <div class="form__inputs-row form__inputs-row--payment">
+                                                <label class="form__input-label form__input-label--card">
+                                                    <input class="form__input form__input--card" type="number"
+                                                        onkeypress="this.value=this.value.substring(0,15);">
+                                                    <img src="images/svg-icons/card.svg" alt="card icon">
+                                                </label>
+                                                <label class="form__input-label form__input-label--card-date">
+                                                    <input class="form__input form__input--card-date" type="number"
+                                                        onkeypress="this.value=this.value.substring(0,3);">
+                                                </label>
+                                                <label class="form__input-label form__input-label--card-cvv">
+                                                    <input class="form__input form__input--card-cvv" type="password"
+                                                        maxlength="3">
+                                                </label>
+                                            </div>
+                                            <a class="form__item-btn button button--save button--center-text" href="#">
+                                                Сохранить
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="tabs__content-tiem" id="orders">
+                                <table class="table user-page__table">
+                                    <tr class="table__header">
+                                        <th class="table__header-product">Товар</th>
+                                        <th class="table__header-amount">Количество</th>
+                                        <th class="table__header-price">Цена</th>
+                                        <th class="table__header-date">Дата</th>
+                                        <th class="table__header-status">Статус</th>
+                                    </tr>
+                                    <tr class="table-item table__row">
+                                        <td class="table-item__info">
+                                            <img class="table-item__image" src="images/slider-thumb-1.jpg"
+                                                alt="cart image">
+                                            <h4 class="table-item__title">Дистиллятор для получения гидролата 8л
+                                            </h4>
+                                        </td>
+                                        <td class="table-item__amount">
+                                            2 шт.
+                                        </td>
+                                        <td class="table-item__price">
+                                            <p class="table-item__price-old">1 953 грн</p>
+                                            <p class="table-item__price-new">5 000 грн</p>
+                                        </td>
+                                        <td class="table-item__date">
+                                            <span>27.10.21</span>
+                                        </td>
+                                        <td class="table-item__status table-item__status--send">
+                                            <span>Отправлено</span>
+                                        </td>
+                                        <td class="table-item__delete">
+                                            <button class="table-item__delete-btn">
+                                                <img src="images/svg-icons/trash.svg" alt="trash">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-item table__row">
+                                        <td class="table-item__info">
+                                            <img class="table-item__image" src="images/slider-thumb-1.jpg"
+                                                alt="cart image">
+                                            <h4 class="table-item__title">Дистиллятор для получения гидролата 8л
+                                            </h4>
+                                        </td>
+                                        <td class="table-item__amount">
+                                            2 шт.
+                                        </td>
+                                        <td class="table-item__price">
+                                            <span>5 000 грн</span>
+                                        </td>
+                                        <td class="table-item__date">
+                                            <span>27.10.21</span>
+                                        </td>
+                                        <td class="table-item__status table-item__status--delivered">
+                                            <span>Получено</span>
+                                        </td>
+                                        <td class="table-item__delete">
+                                            <button class="table-item__delete-btn">
+                                                <img src="images/svg-icons/trash.svg" alt="trash">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-item table__row">
+                                        <td class="table-item__info">
+                                            <img class="table-item__image" src="images/slider-thumb-1.jpg"
+                                                alt="cart image">
+                                            <h4 class="table-item__title">Дистиллятор для получения гидролата 8л
+                                            </h4>
+                                        </td>
+                                        <td class="table-item__amount">
+                                            2 шт.
+                                        </td>
+                                        <td class="table-item__price">
+                                            <span>5 000 грн</span>
+                                        </td>
+                                        <td class="table-item__date">
+                                            <span>27.10.21</span>
+                                        </td>
+                                        <td class="table-item__status table-item__status--expected">
+                                            <span>Ожидается</span>
+                                        </td>
+                                        <td class="table-item__delete">
+                                            <button class="table-item__delete-btn">
+                                                <img src="images/svg-icons/trash.svg" alt="trash">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-item table__row">
+                                        <td class="table-item__info">
+                                            <img class="table-item__image" src="images/slider-thumb-1.jpg"
+                                                alt="cart image">
+                                            <h4 class="table-item__title">Дистиллятор для получения гидролата 8л
+                                            </h4>
+                                        </td>
+                                        <td class="table-item__amount">
+                                            2 шт.
+                                        </td>
+                                        <td class="table-item__price">
+                                            <span>5 000 грн</span>
+                                        </td>
+                                        <td class="table-item__date">
+                                            <span>27.10.21</span>
+                                        </td>
+                                        <td class="table-item__status table-item__status--canceled">
+                                            <span>Отклонено</span>
+                                        </td>
+                                        <td class="table-item__delete">
+                                            <button class="table-item__delete-btn">
+                                                <img src="images/svg-icons/trash.svg" alt="trash">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="tabs__content-tiem " id="favourites">
+                                <ul class="favourites">
+                                    <a class="favourites__item preview-card favourites-card" href="product-page.html">
+                                        <div class="preview-card__image-box">
+                                            <div class="preview-card__favourite preview-card__favourite--liked">
+                                            </div>
+                                            <img src="images/product-2.jpg" alt="preview-card image">
+                                        </div>
+                                        <div class="preview-card__info">
+                                            <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                            <p class="preview-card__price">1 953 грн</p>
+                                        </div>
+                                    </a>
+                                    <a class="favourites__item preview-card favourites-card" href="product-page.html">
+                                        <div class="preview-card__image-box">
+                                            <div class="preview-card__favourite preview-card__favourite--liked">
+                                            </div>
+                                            <img src="images/product-1.jpg" alt="preview-card image">
+                                        </div>
+                                        <div class="preview-card__info">
+                                            <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                            <p class="preview-card__price">1 953 грн</p>
+                                        </div>
+                                    </a>
+                                    <a class="favourites__item preview-card favourites-card" href="product-page.html">
+                                        <div class="preview-card__image-box">
+                                            <div class="preview-card__favourite preview-card__favourite--liked">
+                                            </div>
+                                            <img src="images/product-3.jpg" alt="preview-card image">
+                                        </div>
+                                        <div class="preview-card__info">
+                                            <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                            <p class="preview-card__price">1 953 грн</p>
+                                        </div>
+                                    </a>
+                                    <a class="favourites__item preview-card favourites-card" href="product-page.html">
+                                        <div class="preview-card__image-box">
+                                            <div class="preview-card__favourite preview-card__favourite--liked">
+                                            </div>
+                                            <img src="images/product-3.jpg" alt="preview-card image">
+                                        </div>
+                                        <div class="preview-card__info">
+                                            <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                            <p class="preview-card__price">1 953 грн</p>
+                                        </div>
+                                    </a>
+                                    <a class="favourites__item preview-card favourites-card" href="product-page.html">
+                                        <div class="preview-card__image-box">
+                                            <div class="preview-card__favourite preview-card__favourite--liked">
+                                            </div>
+                                            <img src="images/product-2.jpg" alt="preview-card image">
+                                        </div>
+                                        <div class="preview-card__info">
+                                            <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                            <p class="preview-card__price">1 953 грн</p>
+                                        </div>
+                                    </a>
+                                    <a class="favourites__item preview-card favourites-card" href="product-page.html">
+                                        <div class="preview-card__image-box">
+                                            <div class="preview-card__favourite preview-card__favourite--liked">
+                                            </div>
+                                            <img src="images/product-1.jpg" alt="preview-card image">
+                                        </div>
+                                        <div class="preview-card__info">
+                                            <p class="preview-card__text">Медный чайник с фарфоровой ручкой</p>
+                                            <p class="preview-card__price">1 953 грн</p>
+                                        </div>
+                                    </a>
+                                </ul>
+
+                                <div class="pagination">
+                                    <a class="pagination__prev pagination__link pagination__arrows" href="">
+                                        < </a>
+                                            <ul class="pagination__list">
+                                                <li class="pagination__item">
+                                                    <span
+                                                        class="pagination__link pagination__link--number pagination__link--active"
+                                                        href="#">1
+                                                    </span>
+                                                </li>
+                                                <li class="pagination__item"><a
+                                                        class="pagination__link pagination__link--number" href="#">2</a>
+                                                </li>
+                                                <li class="pagination__item"><a
+                                                        class="pagination__link pagination__link--number" href="#">3</a>
+                                                </li>
+                                                <li class="pagination__item"><a
+                                                        class="pagination__link pagination__link--number" href="#">4</a>
+                                                </li>
+                                            </ul>
+                                            <a class="pagination__next pagination__link pagination__arrows"
+                                                href="#">></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__info">
+                <a class="footer__logo" href="index.html">
+                    <img class="footer__logo-image" src="images/logo-footer.png" alt="logo image">
+                </a>
+                <p class="footer__text">
+                    © 2021 “Copper Pro”<br>
+                    Все права защищенны
+                </p>
+                <a class="footer__link" href="#">
+                    Политика конфиденциальности
+                </a>
+            </div>
+            <div class="footer__lists">
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <h4 class="footer__list-title">Навигация</h4>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="news.html">Новости</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Доставка</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="about.html">О нас</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <h4 class="footer__list-title">Каталог</h4>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="catalog.html">Для эфирных масел</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="catalog.html">Для гидролатов</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="catalog.html">Медная посуда</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="catalog.html">Аксессуары из меди</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Индивидуальный заказ</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Скидки и предложения</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <h4 class="footer__list-title">Контакты</h4>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="https://goo.gl/maps/x1fBZ7aCi23HPRJT6" target="_blank">Бажана
+                            8-Б, Киев,
+                            02132 Украина</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="tel:+380969906756">+38 (096) 990 67 56</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="mailto:alambik@gmail.com">a.alambik@gmail.com</a>
+                    </li>
+                    <li class="footer__social footer__list-item">
+                        <a class="footer__social-link" href="#">
+                            <img src="images/svg-icons/twitter-white.svg" alt=" twitter icon">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="images/svg-icons/facebook-white.svg" alt="facebook icon">
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <img src="images/svg-icons/instagram-white.svg" alt="instagram icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a class="footer__btn button" href="#body">ВВЕРХ</a>
+        </div>
+    </div>
+</footer>
+    <script src="js/app.min.js?_v=20220329120433"></script>
+</body>
+
+</html>
