@@ -18,7 +18,7 @@ export const scss = () => {
             })
         ))
         .pipe(sass({
-            output: 'compressed' // 'expanded'
+            outputStyle: 'compressed' // 'expanded'
         }))
         .pipe(app.plugins.replace(/@img\//g, '../images/'))
         .pipe(
@@ -27,17 +27,17 @@ export const scss = () => {
                 groupCssMediaQueries()
             )
         )
-        .pipe(
-            app.plugins.if(
-                app.isBuild,
-                webpcss(
-                    {
-                        webpClass: ".webp",
-                        noWebpClass: ".no-webp"
-                    }
-                )
-            )
-        )
+        // .pipe(
+        //     app.plugins.if(
+        //         app.isBuild,
+        //         webpcss(
+        //             {
+        //                 webpClass: ".webp",
+        //                 noWebpClass: ".no-webp"
+        //             }
+        //         )
+        //     )
+        // )
         .pipe(
             app.plugins.if(
                 app.isBuild,
