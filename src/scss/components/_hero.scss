@@ -1,4 +1,4 @@
-.hero{
+.hero {
     height: 100vh;
     background-image: url("@img/hero-bg-1.jpg");
     background-repeat: no-repeat;
@@ -6,45 +6,45 @@
     background-position: center right;
     position: relative;
 
-    @media(max-width: 1279px){
+    @media(max-width: 1279px) {
         background-image: url("@img/hero-bg-1279.jpg");
         background-position: bottom right;
     }
 
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         background-image: url("@img/hero-bg-767.jpg");
-         background-position: right;
+        background-position: right;
     }
 
-    &__inner{
+    &__inner {
         height: calc(100vh - 140px);
         overflow: hidden;
 
-        @media(max-width: 1279px){
+        @media(max-width: 1279px) {
             height: calc(100vh - 168px);
         }
 
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             height: calc(100vh - 90px);
         }
     }
 
     //стили slick-слайдера НАЧАЛО
 
-    & .hero__slider{
+    & .hero__slider {
         min-width: 0;
 
-        & .slick-list{
+        & .slick-list {
             height: 100%;
             overflow: hidden;
         }
 
-        & .slick-track{
+        & .slick-track {
             height: 100%;
             display: flex;
         }
 
-        & .slick-arrow{
+        & .slick-arrow {
             position: absolute;
             top: 50%;
             z-index: 99999999;
@@ -56,13 +56,13 @@
             font-size: 0;
             background-color: transparent;
             border: 1px solid $white;
-            
-            img{
+
+            img {
                 display: inline-block;
             }
         }
 
-        & .slick-next{
+        & .slick-next {
             right: 0;
             text-align: left;
             padding-left: 20px;
@@ -71,18 +71,18 @@
             background-position: 43% center;
             border-right: none;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 background: url("@img/arrow-right-bg-grad.jpg") 0 0 no-repeat;
                 border: transparent;
             }
 
-            img{
-               margin-top: 5px;
+            img {
+                margin-top: 5px;
             }
         }
 
-        & .slick-prev{
+        & .slick-prev {
             left: 0;
             text-align: right;
             padding-right: 22px;
@@ -91,34 +91,38 @@
             background-position: 57% center;
             border-left: none;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 background: url("@img/arrow-right-bg-grad.jpg") 0 0 no-repeat;
                 transform: rotate(180deg);
                 border: transparent;
             }
 
-            img{
-               margin-top: 5px;
+            img {
+                margin-top: 5px;
             }
         }
 
-        & .slick-dots{
+        & .slick-dots {
             display: flex;
             align-items: center;
             position: absolute;
             bottom: 150px;
             z-index: 999;
 
-            li{
+            @media (min-width: 768px) and (max-height: 800px) {
+                bottom: 50px;
+            }
+
+            li {
                 line-height: 0;
                 margin-right: 10px;
 
-                &:last-child{
+                &:last-child {
                     margin-right: 0;
                 }
 
-                button{
+                button {
                     cursor: pointer;
                     width: 12px;
                     height: 12px;
@@ -126,11 +130,11 @@
                     border: none;
                     font-size: 0;
                     line-height: 0;
-                }  
+                }
             }
 
-            & .slick-active{
-                button{
+            & .slick-active {
+                button {
                     background: linear-gradient(65.81deg, #5E3928 -24.09%, #E4A16F 104.02%);
                 }
             }
@@ -138,13 +142,13 @@
     }
 
     //стили slick-слайдера КОНЕЦ
-    
-    &__image{
+
+    &__image {
         position: absolute;
         bottom: 40px;
         left: 0;
 
-        &::before{
+        &::before {
             position: absolute;
             content: "";
             width: 1px;
@@ -155,40 +159,59 @@
         }
     }
 
-    &__slider{
+    &__slider {
         height: 100%;
     }
-    
-    .slider-item{
+
+    .slider-item {
         min-width: 0;
         position: relative;
         height: 100vh;
         display: flex;
         justify-content: space-between;
-        
-        &__info{
+
+        &__info {
             height: 100%;
             max-width: 737px;
             margin-top: 145px;
 
-            @media(max-width: 767px){
+            @media (min-width: 768px) and (max-height: 800px) {
                 margin-top: 50px;
             }
+
+            @media(max-width: 767px) {
+                margin-top: 50px;
+            }
+
         }
 
-        &__title{
+        &__title {
             margin-bottom: 50px;
 
-            @media(max-width: 1279px){
+
+            @media(max-width: 1279px) {
                 margin-bottom: 26px;
             }
 
-            @media(max-width: 767px){
+            @media (min-width: 768px) and (max-height: 800px) {
+                font-size: 60px;
+                line-height: 69px;
+                padding-bottom: 40px;
+                margin-bottom: 30px;
+            }
+
+            @media (max-width: 767px) {
                 margin-bottom: 15px;
+            }
+
+            &::after {
+                @media (min-width: 768px) and (max-height: 800px) {
+                    width: 388px;
+                }
             }
         }
 
-        &__text{
+        &__text {
             font-weight: 700;
             font-size: 50px;
             line-height: 48px;
@@ -196,14 +219,22 @@
             max-width: 533px;
             margin-bottom: 40px;
 
-            @media(max-width: 1279px){
+
+            @media(max-width: 1279px) {
                 font-size: 30px;
                 line-height: 39px;
                 margin-bottom: 25px;
                 max-width: 357px;
             }
 
-            @media(max-width: 767px){
+            @media (min-width: 768px) and (max-height: 800px) {
+                font-size: 30px;
+                line-height: 39px;
+                margin-bottom: 25px;
+                max-width: 357px;
+            }
+
+            @media(max-width: 767px) {
                 font-size: 20px;
                 line-height: 26px;
                 margin-bottom: 15px;
@@ -211,7 +242,7 @@
             }
         }
 
-        &__price{
+        &__price {
             width: 326px;
             display: flex;
             justify-content: space-between;
@@ -219,13 +250,20 @@
             margin-bottom: 40px;
             font-size: 30px;
 
-            @media(max-width: 1279px){
+
+            @media(max-width: 1279px) {
                 width: 245px;
                 font-size: 24px;
                 line-height: 23px;
             }
 
-            @media(max-width: 767px){
+            @media (min-width: 768px) and (max-height: 800px) {
+                width: 245px;
+                font-size: 24px;
+                line-height: 23px;
+            }
+
+            @media(max-width: 767px) {
                 width: 160px;
                 font-size: 16px;
                 line-height: 15px;
@@ -233,51 +271,61 @@
             }
         }
 
-        &__price-num{
+        &__price-num {
             font-weight: 800;
         }
 
-        &__button{
+        &__button {
             display: block;
             color: $white;
             border-color: $white;
 
-            @media(max-width: 1279px){
+            @media(max-width: 1279px) {
                 width: 244px;
             }
 
-            @media(max-width: 767px){
+            @media(max-width: 767px) {
                 width: 155px;
             }
         }
 
-        &__image-box{
+        &__image-box {
             margin-top: auto;
             margin-right: auto;
             margin-left: -70px;
 
-            @media(max-width: 1279px){
+
+            @media(max-width: 1279px) {
                 margin-top: auto;
             }
 
-            @media(max-width: 767px){
+            @media (min-width: 768px) and (max-height: 780px) {
+                margin-left: 130px;
+            }
+
+            @media(max-width: 767px) {
                 margin-bottom: 80px;
                 margin-right: -100px;
                 margin-left: -40px;
             }
         }
 
-        &__image{
+        &__image {
             position: relative;
 
-            @media(max-width: 1279px){
+            @media(max-width: 1279px) {
                 width: 85%;
             }
 
-            @media(max-width: 767px){
+            @media (min-width: 768px) and (max-height: 800px) {
+                width: 70%;
+            }
+
+
+            @media(max-width: 767px) {
                 width: 75%;
             }
         }
     }
-    
+
 }
