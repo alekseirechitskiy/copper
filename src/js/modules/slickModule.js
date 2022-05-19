@@ -8,8 +8,8 @@ export default function () {
     $('.hero__slider').slick({
         fade: true,
         dots: true,
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 1570,

@@ -1,9 +1,9 @@
-.input-number{
+.input-number {
     width: auto;
     height: 50px;
     font-size: $font-size-large;
     font-weight: 800;
-    
+
 
     input[type="number"]::-webkit-inner-spin-button,
     input[type="number"]::-webkit-outer-spin-button {
@@ -14,7 +14,7 @@
     }
 
     input[type="number"] {
-      -moz-appearance: textfield;
+        -moz-appearance: textfield;
     }
 
     .quantity-block {
@@ -23,6 +23,7 @@
 
     .quantity-arrow-minus,
     .quantity-arrow-plus {
+        color: #000000;
         margin: 0;
         cursor: pointer;
         font-size: 20px;
@@ -33,7 +34,7 @@
         border: 1px solid $black-haze;
         background-color: $white;
 
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             width: 40px;
         }
     }
@@ -51,7 +52,7 @@
         -moz-appearance: none;
         appearance: none;
 
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             width: 60px;
         }
     }

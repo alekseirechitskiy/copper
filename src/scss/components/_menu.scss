@@ -1,5 +1,5 @@
-.menu{
-    @media(max-width: 1278px){
+.menu {
+    @media(max-width: 1278px) {
         order: 1;
         width: 100%;
         display: flex;
@@ -7,16 +7,16 @@
         margin-top: auto;
     }
 
-    &__list{
+    &__list {
         display: flex;
         margin-left: 76px;
         margin-right: auto;
 
-        @media(max-width: 1278px){
+        @media(max-width: 1278px) {
             margin: 50px auto 0;
         }
 
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             z-index: 100000;
             display: block;
             transform: translateX(-150%);
@@ -33,35 +33,36 @@
             left: -15px;
             right: -15px;
 
-            &.menu__list--active{
+            &.menu__list--active {
                 transform: translateX(0);
                 transition: all .5s;
             }
         }
     }
 
-    &__item + .menu__item{
+    &__item+.menu__item {
         margin-left: 50px;
 
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             margin-left: 0;
         }
     }
-    
-    &__link{
+
+    &__link {
         color: $white;
         padding-bottom: 4px;
         border-bottom: 1px solid transparent;
         transition: all .3s;
         font-weight: 500;
 
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             font-size: 30px;
             line-height: 210.9%;
             border: none;
         }
-        
-        &:hover{
+
+        &:hover {
+            border: 0;
             border-bottom-width: 1px;
             border-bottom-style: solid;
             border-image: linear-gradient(92.18deg, #A26D4C 20.13%, #E4A16F 92.93%);
@@ -71,17 +72,17 @@
             cursor: pointer;
             transition: all .3s;
 
-            @media(max-width: 767px){
+            @media(max-width: 767px) {
                 border: none;
             }
         }
     }
 
-    &__btn{
+    &__btn {
         position: absolute;
         display: none;
 
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             display: block;
             top: 25px;
             right: -15px;
@@ -95,7 +96,7 @@
         }
     }
 
-    &__close{
+    &__close {
         order: 2;
         width: 20px;
         height: 20px;
@@ -106,7 +107,7 @@
         cursor: pointer;
         position: relative;
 
-        &::before{
+        &::before {
             position: absolute;
             content: "";
             width: 100%;
@@ -118,7 +119,7 @@
             transform: rotate(45deg);
         }
 
-        &::after{
+        &::after {
             position: absolute;
             content: "";
             width: 100%;
@@ -130,5 +131,5 @@
             transform: rotate(-45deg);
         }
     }
-    
+
 }
